@@ -256,3 +256,82 @@ a{
     margin-right: 30px;
     cursor: pointer;
 }
+.three1{
+    height: 350px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.three2{
+    height: 50px;
+}
+.down{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.three2:hover .down{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(143, 36, 36);
+}
+.down1{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-22px);
+}
+.Localwarehouses:hover .down1{
+    height: 300px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down2{
+    height: 300px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-46px);
+    
+}
+.Smarthomegarden:hover .down2{
+    display: block;
+    display: flex;
+    text-align: left;
+    padding-left: 500px;
+    justify-content: space-around;
+    align-items: right; 
+    background-color: rgb(12, 231, 12);
+}
+.down3{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-22px);
+}
+.Sportsoutdoors:hover .down3{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
