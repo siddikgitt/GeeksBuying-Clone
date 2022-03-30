@@ -47,6 +47,7 @@ a{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .ourapp:hover .down{
+    transform: translateX(-150px);
     display: block;
     display: flex;
     flex-direction: column;
@@ -57,11 +58,10 @@ a{
 .down1{
     display: none;
     position: absolute;
-    min-width: 100px;
-    min-height: 150px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .language:hover .down1{
+    transform: translateX(-280px);
     display: block;
     display: flex;
     flex-direction: column;
@@ -72,11 +72,10 @@ a{
 .down2{
     display: none;
     position: absolute;
-    min-width: 200px;
-    min-height: 150px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .NRI:hover .down2{
+    transform: translateX(-380px);
     display: block;
     display: flex;
     flex-direction: column;
@@ -92,6 +91,7 @@ a{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .spport:hover .down3{
+    transform: translateX(-280px);
     display: block;
     display: flex;
     flex-direction: column;
@@ -256,23 +256,25 @@ a{
     margin-right: 30px;
     cursor: pointer;
 }
-.three1{
+/* .three1{
     height: 350px;
     width: 100%;
     padding-bottom: 10px;
-}
+    border: 1px solid;
+} */
 .three2{
-    height: 20px;
+    height: 30px;
     width: 150px;
 }
 .down{
     display: none;
     position: absolute;
     min-width: 250px;
-    min-height: 300px;
+    min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .three2:hover .down{
+    transform: translateY(-10px);
     display: block;
     display: flex;
     flex-direction: column;
@@ -284,10 +286,10 @@ a{
     display: none;
     position: absolute;
     min-width: 250px;
-    min-height: 200px;
+    min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-left: 250px;
-    transform: translatey(-22px);
+    transform: translatey(-27px);
 }
 .Localwarehouses:hover .down1{
     height: 300px;
@@ -304,10 +306,10 @@ a{
     display: none;
     position: absolute;
     min-width: 250px;
-    min-height: 200px;
+    min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-left: 250px;
-    transform: translatey(-46px);
+    transform: translatey(-60px);
     
 }
 .Smarthomegarden:hover .down2{
@@ -323,12 +325,165 @@ a{
     display: none;
     position: absolute;
     min-width: 250px;
-    min-height: 200px;
+    min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-left: 250px;
-    transform: translatey(-22px);
+    transform: translatey(-93px);
 }
 .Sportsoutdoors:hover .down3{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down4{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-125px);
+}
+.Consumerelectronics:hover .down4{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down5{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-158px);
+}
+.TVBoxesMiniPCs:hover .down5{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down6{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-193px);
+}
+.ComputersTabletsAccessories:hover .down6{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down7{
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-225px);
+}
+.ToysHobbies:hover .down7{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down8{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-258px);
+}
+.PhonesAccessories:hover .down8{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down9{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-291px);
+}
+.AutomobilesMotorcycles:hover .down9{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down10{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-325px);
+}
+.WearableDevices:hover .down10{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down11{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-360px);
+}
+.SecuritySystems:hover .down11{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(12, 231, 12);
+}
+.down12{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-391px);
+}
+.Fashion:hover .down12{
     display: block;
     display: flex;
     flex-direction: column;
