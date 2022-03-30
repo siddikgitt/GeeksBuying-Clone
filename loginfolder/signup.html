@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css" />
+
+</head>
+<body>
+    <div id="top">
+        <img src="https://www.shareasale.com/images/logo2016_1.jpg"/ >   
+    </div>
+    <div id="bottum">
+    
+        <img src="https://img.gkbcdn.com/s3/bn/2203/signin-6239450f2b40c91b9c8a4526.jpg"/>
+
+      <div id="Signuppage">
+          <div id="divtext">
+              <h3>Create your account</h3>
+              <p>Sign In</p>
+          </div>
+
+          <form id="form">
+            <input id="nickname" class="common" type="text" placeholder="Nick Name" size="30" /><br><br>
+
+            <input id="email" class="common" type="email" placeholder="Email Address" size="40"/><br><br>
+
+            <input id="pass" class="common" type="password" placeholder="Password" size="40" /><br><br>
+
+            <input id="access" type=""text placeholder="Access code" size="4" style="height:40px; width:170px; padding-left:15px;"/> 
+
+            <input id="captcha" type="text" style="height:40px; width:115px; padding-left:15px;"/><br><br>
+
+            <div id="checkbox">
+                <input type="checkbox"/>
+                <label id="label">I agree to GeekBuying's <a href="">Terms of Use</a> & <a href="">Privacy Policy</a>.</label>
+            </div><br><br>
+            
+            
+            <input id="btn" type="submit" value="Create account" />
+        </form>
+      </div>
+        
+    </div>
+    <p>Copyright © 2012 - 2022 GeekBuying.com. All rights reserved.</p>
+</body>
+</html>
+
+<script>
+    
+    document.querySelector("#form").addEventListener("submit",signupFun)
+
+    var userData=JSON.parse(localStorage.getItem("geeksign"))||[];
+
+    function signupFun(){
+        event.preventDefault()
+        
+        userObj={
+            nickname:document.querySelector("#nickname").value,
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#pass").value,
+            accesscode:document.querySelector("#access").value,
+        };
+       //console.log(userObj);
+       userData.push(userObj);
+       //console.log(userData);
+       localStorage.setItem("geeksign",JSON.stringify(userData))
+       //console.log(userData);
+    };
+
+</script>
