@@ -491,3 +491,48 @@ a{
     align-items: right;
     background-color: rgb(12, 231, 12);
 }
+.homeone{
+    height: 350px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: white;
+}
+
+.homeone>div:nth-child(1){
+    width: 70%;
+    height: 300px;
+    margin: 20px;
+}
+.homeone>div:nth-child(2){
+    height: 300px;
+    width: 30%;
+    margin: 20px;
+}
+.homeone1>div:nth-child(1){
+    height: 110px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.homeone1>div:nth-child(2){
+    height: 170px;
+    width: 100%;
+}
+.hometwo{
+    height:280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 15px 0px;
+    
+}
+.hometwo>div{
+    height: 280px;
+    width: 23%;
+    background-color: white;
+    
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.mySlides {display:none;}
