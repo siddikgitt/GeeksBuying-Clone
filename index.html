@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <div class="one">
-                <div class="ourapp" >
-                    <!-- <img src="https://cdn-icons-png.flaticon.com/128/7177/7177341.png" alt="mobile phone "> -->
-                    <button>Save BIG with our app!</button>
-                    <ul class="down">
+        <div class="navbarr">
+            <div class="navbar" style="height: 50px;">
+                <div class="dropdown">
+                    <button class="dropbtn"><span><img src="https://cdn-icons-png.flaticon.com/128/7177/7177341.png" style="height: 15px;"></span> Save BIG with our app! 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
                         <li><a href="#"><samp>
                             <div class="ourimg1">
                                 <p>Get exclusive app deals and discounts, download our app & SAVE</p>
@@ -28,51 +30,58 @@
                                 <p>Go mobile site</p>
                             </div>
                         </samp></a></li>
-                    </ul>
+                    </div>
                 </div>
-                <div class="language">
-                    <button>language</button>
-                    <ul class="down1" style="min-width: 90px;">
-                        <li><a href="#">Konkani</a></li>
-                        <li><a href="#">Maithili</a></li>
-                        <li><a href="#">Marathi</a></li>
-                        <li><a href="#">Nepali</a></li>
-                    </ul>
+                <div class="dropdown">
+                    <button class="dropbtn">language 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Nepali</a>
+                      <a href="#">Marathi</a>
+                      <a href="#">Maithili</a>
+                      <a href="#">Konkani</a>
+                      <a href="#">Maithili</a>
+                    </div>
                 </div>
-                <div class="NRI">
-                    <button>Ship to <samp><img src="" alt=""></samp> /NRI</button>
-                    <ul class="down2" style="width: 300px;">
-                        <li><a href="#">
-                            <div class="nri1">
-                                <p>Select Regional Settings</p><br>
-                                <label>Ship to</label><br>
-                                <select id="NRI">
-                                    <option value="india"><samp><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="india"></samp>India</option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                </select><br>
-                                <label>Currency</label><br>
-                                <select id="Currency">
-                                    <option value="rupee">INR ₹</option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                </select><br>
-                                <button id="save">Save</button>
-                            </div>
-                        </a></li>
-                    </ul>
+                <div class="dropdown">
+                    <button class="dropbtn">Ship to <span><img style="height: 15px;" src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"></span>/NRI
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="nri1">
+                            <p>Select Regional Settings</p><br>
+                            <label>Ship to</label><br>
+                            <select id="NRI">
+                                <option value="india"><samp><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="india"></samp>India</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select><br>
+                            <label>Currency</label><br>
+                            <select id="Currency">
+                                <option value="rupee">INR ₹</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select><br>
+                            <button id="save">Save</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="spport">
-                    <button>spport center</button>
-                    <ul class="down3" style="min-width: 100px;">
-                        <li><a href="#">Live Chat</a></li>
-                        <li><a href="#">Ticket</a></li>
-                        <li><a href="#">Help Center</a></li>
-                    </ul>
-                </div>
-            </div>
+                <div class="dropdown">
+                        <button class="dropbtn">spport center 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="dropdown-content">
+                        <a href="#"> <span><img src="https://img.icons8.com/carbon-copy/344/chat--v1.png" style="height: 15px; margin-left: 10px;"></span> Live Chat</a>
+                        <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/office-vol-3-3/140/send__paper_plane__rocket__mail-256.png" style="height: 15px; margin-left: 10px;"></span>Ticket</a>
+                        <a href="#"><img src="https://img.icons8.com/ios/344/help.png" style="height: 15px; margin-left: 10px;"></span>Help Center</a>
+                    </div>
+                </div> 
+            </div>  
+
+
             <div class="two">
                 <img src="https://www.shareasale.com/images/logo2016_1.jpg" alt="logo">
                 <div class="two1">
@@ -702,8 +711,83 @@
                 <p style="margin: 0; padding: 0; font-size: small;">S905X2 4K TV box, Netflix, Disney+, Dolby Audio, Chromecast Prime Video support</p>
             </div>
         </div>
-    </div>
     
+        <div class="homeeight">
+            <div style="height: 50px; width: 100%; display: flex;"><h3>Popular Brands</h3><a href="#" style="text-decoration: none; margin-left: 20px; margin-bottom: 0;">see More</a></div>
+        <div class="eight1">
+            <div class="eight2">
+                <div class="eight3">
+                    <div><img src="https://img.gkbcdn.com/s3/b/Logo/tronsmart.jpg?v=788944783"></div>
+                </div>
+                <div class="eight4">
+                    <div><img class="zoom" src="https://img.gkbcdn.com/p/2019-07-05/tronsmart-element-force-portable-bluetooth-speaker-1571994482583._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom" src="https://img.gkbcdn.com/p/2019-09-27/tronsmart-element-t6-mini-bluetooth-5-0-speaker---black-1571994805140._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom" src="https://img.gkbcdn.com/p/2021-10-12/tronsmart-splash-1-led-15w-bluetooth-speaker-1634038411944._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom" src="https://img.gkbcdn.com/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241._w280_p1_.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="eight2">
+                <div class="eight3">
+                    <div><img src="https://img.gkbcdn.com/s3/b/Logo/jimmy.jpg?v=-219567574" alt=""></div>
+                </div>
+                <div class="eight4">
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2019-05-07/xiaomi-jimmy-jv83-wireless-vacuum-cleaner-blue-1571994426496._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2020-09-04/jimmy-jv65-handheld-cordless-stick-vacuum-cleaner---water-tank---red--1599215100359._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2020-04-09/JIMMY-JV35-Anti-mite-Vacuum-Cleaner-Gray-899874-._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2020-07-29/JIMMY-JV85-Pro-Wireless-Vacuum-Cleaner-Purple-425873-0._w280_p1_.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="eight1">
+            <div class="eight2">
+                <div class="eight3">
+                    <div><img src="https://img.gkbcdn.com/s3/b/Logo/roborock.jpg" alt=""></div>
+                </div>
+                <div class="eight4">
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2020-03-23/roborock-s5-max-robot-vacuum-cleaner-international-version-white-1584951748299._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-11-11/Roborock-Dyad-Wet-and-Dry-Vacuum-Clenaer-13Kpa-5000mAh-35Mins-Run-Time-478096-1._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2022-03-14/Roborock-Q7-Max-Robot-Vacuum-Cleaner-497779-0._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-03-01/roborock-s7-robot-vacuum-cleaner-2500pa-powerful-suction-1614568841892._w280_p1_.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="eight2">
+            <div class="eight3">
+                <div><img src="https://img.gkbcdn.com/s3/b/Logo/mecool.jpg" alt=""></div>
+            </div>
+            <div class="eight4">
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2020-04-01/MECOOL-KM1-Collective-Amlogic-S905X3-4GB-64GB-Android-9-0-TV-BOX-Black-901042-._w280_p1_.jpg" alt=""></div>
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-01-14/MECOOL-KM6-Deluxe-4GB-64GB-Android-TV-10-0-TV-BOX-428277-0._w280_p1_.jpg" alt=""></div>
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-01-25/mecool-k5-dvb-t2-dvb-s2-2gb-16gb-android-9-0-tv-box-1611556766837._w280_p1_.jpg" alt=""></div>
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-05-27/MECOOL-KM2-Netflix-4K-Android-TV-4K-TV-BOX-459862-0._w280_p1_.jpg" alt=""></div>
+            </div>
+            </div>
+        </div>
+        <div class="eight1">
+            <div class="eight2">
+                <div class="eight3">
+                    <div><img src="https://img.gkbcdn.com/s3/b/Logo/sonoff.jpg" alt=""></div>
+                </div>
+                <div class="eight4">
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2018-11-24/sonoff-s26-au-10a-mini-wifi-smart-socket-white-au-plug-1571991729101._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2022-03-10/SONOFF-MINIR2-Two-way-DIY-Smart-Switch-WiFi-Switch-497650-0._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2022-03-10/SONOFF-RF-BridgeR2-433MHz-RF-Bridge-Smart-Gateway-with-APP-Control-497647-0._w280_p1_.jpg" alt=""></div>
+                    <div><img class="zoom"src="https://img.gkbcdn.com/p/2022-03-10/SONOFF-ZB-Dongle-P-Plus-Zigbee-3-0-USB-Dongle-Plus-497649-0._w280_p1_.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="eight2">
+            <div class="eight3">
+                <div><img src="https://img.gkbcdn.com/s3/b/creality-3d.jpg" alt=""></div>
+            </div>
+            <div class="eight4">
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-08-24/ComgrowCreality-Ender-3-Aluminum-3D-Printer-471206-0._w280_p1_.jpg" alt=""></div>
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2022-01-18/Creality-CR-6-SE-3D-Printer-493957-0._w280_p1_.jpg" alt=""></div>
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2021-08-24/Creality-Ender-3-V2-3D-Printer-with-Upgraded-32-bit-Silent-Motherboard-471203-0._w280_p1_.jpg" alt=""></div>
+                <div><img class="zoom"src="https://img.gkbcdn.com/p/2022-01-18/Creality-Ender-3-S1-3D-Printer-493956-0._w280_p1_.jpg" alt=""></div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>
