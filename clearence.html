@@ -1,0 +1,1993 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <title>Document</title>
+  <style>
+    *body{
+      background-color: #f2f2f2;
+    }
+ #container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+       
+      }
+      
+      #headbox{
+        width:100%;
+        height:160px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        margin-bottom: 30px;
+        background-color: #b2ddff;
+      }
+      .head{
+        text-align: center;
+        padding:55px;
+      }
+
+      .box{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      }
+    .img{
+      height: 180px;
+      width: 180px;
+      margin: auto;
+      padding:20px ;
+    }
+    .name{
+      font-size: 15px;
+      padding-left: 7px;
+    }
+    .price{
+     line-height: 0%;
+      color:#d84141;
+      font-size: 20px;
+      font-weight: bolder;
+      padding-left: 7px;
+    }
+    .price1{
+      line-height: 5px;
+      font-size: 16px;
+      padding-left: 7px;
+      color: gray;
+      text-decoration-line:line-through;
+    }
+    #deal{
+     width: 80%;
+     height:180px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+     margin: auto;
+    }
+    .sp{
+      text-align: center;
+      padding: 20px;
+    }
+    #container2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+       
+      }
+      #container>div:hover{
+                  transform: scale(1.019);
+      }
+      .off{
+        background-color: #d84141;
+        color:white;
+        width:27%;
+        margin-left: 7px;
+        font-size: 14px;
+      }
+     
+      .h2{
+        margin-left: 10%;
+      }
+      #container3{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+       margin-top: 20px;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      }
+      #container2>div:hover{
+                  transform: scale(1.019);
+      }
+      #container3>div:hover{
+                  transform: scale(1.019);
+      }
+
+  
+     #deal>div{
+       margin: auto;
+       display: flex;
+       height:80px;
+       width:85%;
+       box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+     }
+     #deal>div>div{
+       text-align: center;
+       padding: 30px;
+       font-size: 20px;
+       gap:20px;
+       margin-left: 80px;
+     }
+
+
+
+     .main{
+    width: 70%;
+    margin: auto;
+}
+select,input,button{
+    border: 0;
+    background: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar start --------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------- */
+.navbarr{
+    height: 125px;
+    width: 100%;
+    padding-left: 40px;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+.nav-link{
+	color: black;
+	margin-right: 20px;
+}
+.navbar{
+	padding-left: 450px;
+	width: 100%;
+	height: 20px;
+}
+.dropdown-menu{
+	font-size: larger;
+	color: black;
+}
+.ourimg1{
+    height: 200px;
+    width: 250px;
+    padding-right: 25px;
+}
+.ourimg img{
+    width: 100%;
+}
+.ourimg{
+    height: 100px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "a b b"
+    "a c c"
+}
+.ourimg>div:nth-child(1){
+    grid-area: a;
+    height: 100px;
+    width: 100px;
+}
+.ourimg>div:nth-child(2){
+    grid-area: b;
+}
+.ourimg>div:nth-child(3){
+    grid-area: c;
+}
+.nri1{
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+}
+.nri1>select{
+    border: 1px solid;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.nri1>button{
+    margin-left: 200px;
+    background-color: orange;
+    height: 20px;
+    width: 50px;
+}
+
+.two{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.two>img{
+    height: 80px;
+    cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+.two1{
+    height: 30px;
+    width: 500px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: flex;
+}
+.two1>input{
+    width: 400px;
+}
+.two1>input{
+    width: 400px;
+}
+.allcategories{
+    height: 30px;
+    width: 100px;
+    margin-top: 5px;
+}
+.allcategories+label{
+    margin-top: 5px;
+}
+.two1>button{
+    height: 30px;
+    width: 50px;
+    background-color: #3199ce;
+    cursor: pointer;
+}
+#search>img{
+    height: 25px;
+}
+.two2{
+    display: flex;
+   
+}
+.two2>div{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.two2>div>img,#cart>img{
+    height: 30px;
+    margin-bottom: 16px;
+}
+.two2>div>div{
+    margin-left: 20px;
+    height: 50px;
+}
+.two2>div>div>p{
+    margin: 0;
+}
+.signin{
+    display: none;
+    position: absolute;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.signin1:hover .signin{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+    transform: translateY(230px);
+}
+#signin,#createaccount{
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    margin-top: 10px;
+}
+.signin>li>div{
+    text-align: center;
+}
+#cartcount{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+}
+/* navbar start --------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.three{
+    display: flex;
+    font-weight: bold;
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 14px;
+}
+.three>div,select{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.three2{
+    height: 30px;
+    width: 150px;
+}
+.down{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.three2:hover .down{
+    
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+    z-index: 1;
+}
+.down1{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 222px;
+    transform: translatey(-27px);
+}
+.Localwarehouses:hover .down1{
+    height: 300px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+	width: 600px;
+}
+.down2{
+    height: 300px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-60px);
+	padding: 0;
+    
+}
+.Smarthomegarden:hover .down2{
+	width: 800px;
+    display: block;
+    display: flex;
+    text-align: left;
+    padding-left: 500px;
+    justify-content: space-around;
+    align-items: right; 
+    background-color: white;
+}
+.down3{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-100px);
+}
+.Sportsoutdoors:hover .down3{
+	width: 800px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down4{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 225px;
+    transform: translatey(-135px);
+}
+.Consumerelectronics:hover .down4{
+	width: 800px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down5{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-173px);
+}
+.TVBoxesMiniPCs:hover .down5{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down6{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-208px);
+}
+.ComputersTabletsAccessories:hover .down6{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down7{
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-245px);
+}
+.ToysHobbies:hover .down7{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down8{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-283px);
+}
+.PhonesAccessories:hover .down8{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down9{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-320px);
+}
+.AutomobilesMotorcycles:hover .down9{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down10{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-325px);
+}
+.WearableDevices:hover .down10{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down11{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-357px);
+}
+.SecuritySystems:hover .down11{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down12{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-390px);
+}
+.Fashion:hover .down12{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.iner>div{
+	margin-right: 10px;
+	margin-left: 0;
+}
+.iner>div>div{
+	margin-bottom: 10px;
+}
+
+    
+
+
+/* footerpart */
+#footer{
+    margin-top: 150px;
+
+    /* border:1px solid red; */
+   
+}
+
+.bottom{
+    height: auto;
+    width: 99%;
+    display: grid;
+    margin: 30px;
+    gap: 30px;
+    margin-left:100px;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+#SendEmail{
+    
+    width: 124px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: #074ea3;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+
+
+}
+#sub{
+    display:flex;
+    margin-top:80px;
+}
+#email{
+    height: 31px;
+    width: 350px;
+    /* text-align: center; */
+    padding-left:10px;
+    border-radius: 3px;;
+    color: grey;
+    /* margin: auto; */
+    margin-left: 50px;
+    border:1px solid #074ea3;
+
+}
+#facebook{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* border:1px solid red; */
+    margin-left:-90px;
+    width:230px;
+    margin-top:90px;
+    /* justify-content:space-between; */
+}
+/* #facebook>div{
+    
+    height: 40px;
+    width: 50px;
+
+} */
+#facebook>div>a>img{
+    height: 15px;
+    width: 15px;
+    /* background-color:white; */
+    /* border-radius: 30px; */
+    cursor: pointer;
+
+
+}
+
+#facebook>div>a>img:hover{
+    transform: translateY(-10px);
+}
+#help{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left:-90px;
+    margin-top:20px;
+    /* border:1px solid red; */
+    width:600px;
+    
+}
+#help>div>p{
+    margin: auto;
+    cursor: pointer;
+    font-size:12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height:1.8;
+
+   
+}
+#geek{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap:15px;
+    margin-left:150px;
+    margin-right:160px;
+}
+#geek>div{
+    background-color: #f1f1f1;
+    gap: 20px;
+    text-align: center;
+    color:grey;
+    padding-top:8px;
+    
+}
+#lang{
+    text-align: center;
+    color: grey;
+    margin-left:100px;
+    margin-top:40px;
+    margin-bottom:40px;
+    font-size:12px;
+}
+#para{
+    width:510px;
+    height:260px;
+    /* border:1px solid red; */
+    margin-left:50px;
+    margin-top:15px;
+    padding-right: 0px;
+    margin-right:30px;
+}
+#para p{
+    color:grey;
+    line-height:1.6;
+    font-size:14px;
+    /* font-family: "Open Sans", sans-serif; */
+}
+#android{
+    display:flex;
+    /* border:1px solid red; */
+    height:35px;
+    width:200px;
+    margin-left:160px;
+    margin-top:-25px;
+    justify-content:space-between;
+}
+#android>div>a>img{
+    height: 25px;
+    width: 25px;
+    /* background-color:white; */
+    /* border-radius: 30px; */
+    cursor: pointer;
+}
+#super{
+    margin-top:30px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    width:100%;
+    
+}
+
+  </style>
+    
+
+  </head>
+
+  <body>
+
+  
+    <div class="main">
+      <!-- navbar  start -->
+<!---------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------- */ -->
+      <div class="navbarr">
+          <nav class="navbar navbar-expand-sm">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="navbar-nav">
+                      <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                              <span><img src="https://cdn-icons-png.flaticon.com/128/7177/7177341.png" style="height: 15px;"></span>Save BIG with our app!</a>
+                          <div class="dropdown-menu" style="padding: 20px;">
+                              <div class="ourimg1">
+                              <p>Get exclusive app deals and discounts, download our app & SAVE</p>
+                              <div class="ourimg">
+                                  <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/android_app.png" alt="urcod"></div>
+                                  <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/app_store.jpg" alt="app_store"></div>
+                                  <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/google_play.jpg" alt="google_play"></div>
+                              </div>
+                              <p>Go mobile site</p>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">language </a>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">Nepali</a>
+                              <a href="#" class="dropdown-item">Marathi</a>
+                              <a href="#" class="dropdown-item">Maithili</a>
+                              <a href="#" class="dropdown-item">Konkani</a>
+                              <a href="#" class="dropdown-item">Maithili</a>
+                              <a href="#" class="dropdown-item">Drafts</a>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ship to <span><img style="height: 15px;" src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"></span>/NRI</a>
+                          <div class="dropdown-menu">
+                              <div class="nri1">
+                                  <p>Select Regional Settings</p><br>
+                                  <label>Ship to</label><br>
+                                  <select id="NRI">
+                                      <option value="india"><samp><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="india"></samp>India</option>
+                                      <option value=""></option>
+                                      <option value=""></option>
+                                      <option value=""></option>
+                                  </select><br>
+                                  <label>Currency</label><br>
+                                  <select id="Currency">
+                                      <option value="rupee">INR ₹</option>
+                                      <option value=""></option>
+                                      <option value=""></option>
+                                      <option value=""></option>
+                                  </select><br>
+                                  <button id="save">Save</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">spport center</a>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item"><span><img src="https://img.icons8.com/carbon-copy/344/chat--v1.png" style="height: 15px; margin-left: 10px;"></span>Inbox</a>
+                              <a href="#" class="dropdown-item"><span><img src="https://cdn4.iconfinder.com/data/icons/office-vol-3-3/140/send__paper_plane__rocket__mail-256.png" style="height: 15px; margin-left: 10px;"></span>Sent</a>
+                              <a href="#" class="dropdown-item"><span><img src="https://img.icons8.com/ios/344/help.png" style="height: 15px; margin-left: 10px;"></span>Drafts</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+          <div class="two">
+              <img src="https://www.shareasale.com/images/logo2016_1.jpg" alt="logo">
+              <div class="two1">
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">allcategories </a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Smart Home & Garden</a>
+                          <a href="#" class="dropdown-item">Phones & Accessories</a>
+                          <a href="#" class="dropdown-item">Computers, Tablets & Accessories</a>
+                          <a href="#" class="dropdown-item">Wearable Devices</a>
+                          <a href="#" class="dropdown-item">Maithili</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+                  <label style="font-size: large;">|</label>
+                  <input type="text" id="searchinput" value="" placeholder="search by keywordo">
+                  <button id="search">
+                      <img src="https://cdn.vectorstock.com/i/1000x1000/18/12/search-icon-white-on-the-blue-background-vector-3451812.webp" alt="search">
+                  </button>   
+              </div>
+              <div class="two2">
+                  <div class="signin1">
+                      <img src="https://cdn-icons-png.flaticon.com/128/747/747376.png" alt="sign in">
+                      <p>Sign in</p>
+                      <ul class="signin">
+                          <li>
+                              <div>
+                                  <p>Welcome to Geekbuying</p><br>
+                                  <a href="./loginfolder/login.html"> <button id="signin">Sign in</button><br></a>
+                                  <a href="./loginfolder/signup.html"><button id="createaccount">create a new account</button> </a>
+                                  <p>or</p>
+                                  <div>
+                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/36px-Google_%22G%22_Logo.svg.png?20210618182606" alt="google icon">
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div id="wishlist">
+                      <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="wishlist">
+                      <p>Wishlist</p>
+                  </div>
+                  <a href="./deal/cart.html"><div id="cart" style="display: flex; margin-right: 10px;">
+                      <img src="https://cdn-icons.flaticon.com/png/128/649/premium/649931.png?token=exp=1648490987~hmac=ac3b9cc2fcde0ff28cd07de528cfa81e" alt="cart">
+                      <div>
+                           <div id="cartcount"></div>
+                          <p>Cart</p>
+                      </div>  
+                  </div></a>
+              </div>
+          </div>
+          <div class="three">
+              <div class="three1">
+                  <div class="three2">
+                      <div>shop all categories</div>
+                      <ul class="down">
+                          <li> <a href="#"><div class="Localwarehouses"><div>Local Warehouses</div>
+                              <ul class="down1"> 
+                                   <a href="#">EU Warehouses</a>
+                                   <a href="#">DE Warehouses</a>
+                                   <a href="#">PL Warehouses</a>
+                                   <a href="#">ES Warehouses</a>
+                                   <a href="#">IT Warehouses</a>
+                                   <a href="#">cz Warehouses</a>
+                                   <a href="#">uk Warehouses</a>
+                                   <a href="#">EU-3 Warehouses</a>
+                                   <a href="#">Us Warehouses</a>
+                              </ul>
+                              
+                          </div></a></li>
+                          <li> <a href="#"><div class="Smarthomegarden"><div>Smart Home & Garden</div>
+                              <ul class="down2">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; transform: translateX(-320px);">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Smarthome</a><br>
+                                                  <a href="#">Robot Vacuum Cleaners</a><br>
+                                                  <a href="#">Cordless Vacuum Cleaners</a><br>
+                                                  <a href="#">Fitness</a><br>
+                                                  <a href="#">Smart Sockets & Switches</a><br>
+                                                  <a href="#">Smart Lights</a><br>
+                                                  <a href="#">Xiaomi Smart Gadgets</a><br>
+                                                  <a href="#">Air Purifier</a><br>
+                                                  <a href="#">Others</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Kitchen & Dining</a><br>
+                                                  <a href="#">Kitchen Appliances</a><br>
+                                                  <a href="#">Cookware</a><br>
+                                                  <a href="#">Bakeware</a><br>
+                                                  <a href="#">Tableware</a><br>
+                                                  <a href="#">Smart Lights</a><br>
+                                                  <a href="#">Barware</a><br>
+                                                  <a href="#">Kitchen Tools & Gadgets</a><br>
+                                                  <a href="#">Others</a>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; transform: translateX(-320px);">
+                                              <div>
+                                                  <a href="#" style="font-size: large">Furniture</a><br>
+                                                  <a href="#">Outdoor Furniture</a><br>
+                                                  <a href="#">Tables</a><br>
+                                                  <a href="#">Chairs</a><br>
+                                                  <a href="#">Beds & Accessories</a><br>
+                                                  <a href="#">Cabinets & Storage</a><br>
+                                                  <a href="#">ShelvingShelving</a><br>
+                                                  <a href="#">Entertainment Centres & TV Stands</a><br>
+                                                  <a href="#">Furniture Sets</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Patio, Lawn & Garden</a><br>
+                                                  <a href="#">Pots & Planters</a><br>
+                                                  <a href="#">Watering & Irrigation</a><br>
+                                                  <a href="#">Mowers & Outdoor Power Tools</a><br>
+                                                  <a href="#">Other Garden Sups</a><br>
+                                                  <a href="#">Beds & Accessories</a><br>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; transform: translateX(-320px);">
+                                              <div>
+                                                  <a href="#" style="font-size: large">Health & Beauty</a><br>
+                                                  <a href="#">Personal Care</a><br>
+                                                  <a href="#">Health Care</a><br>
+                                                  <a href="#">Massage & Relaxation</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Home Decors</a><br>
+                                                  <a href="#">Rugs</a><br>
+                                                  <a href="#">Door Mats</a><br>
+                                                  <a href="#">Window Treatments</a><br>
+                                                  <a href="#">Mirrors</a><br>
+                                                  <a href="#">Artificial Flora</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Lighting</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Tools & Home Improvement</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Office Supplies</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Pet Supplies</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Bathroom Supplies</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="Sportsoutdoors"><div>Sports & Outdoors</div>
+                              <ul class="down3">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">E-Bikes, Scooters & Wheels</a><br>
+                                                  <a href="#">Bikes</a><br>
+                                                  <a href="#">Electric Scooters</a><br>
+                                                  <a href="#">Electric Skateboards</a><br>
+                                                  <a href="#">Accessories</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Exercise</a><br>
+                                                  <a href="#">Fitness & Body Building</a><br>
+                                                  <a href="#">Water Sports</a><br>
+                                                  <a href="#">Yoga & Pilates</a><br>
+                                                  <a href="#">Weightlifting</a><br>
+                                                  <a href="#">Cardio</a><br>
+                                                  <a href="#">Indoor Games</a>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large">Camping & Hiking</a><br>
+                                                  <a href="#">Luggage & Bags</a><br>
+                                                  <a href="#">Tent & Hammock</a><br>
+                                                  <a href="#">Travel Supplies</a><br>
+                                                  <a href="#">Knives & Multi Tools</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Cycling</a><br>
+                                                  <a href="#">Bike Computers</a><br>
+                                                  <a href="#">Bike Bags</a><br>
+                                                  <a href="#">Bike Tools</a><br>
+                                                  <a href="#">Cycling Apparels</a><br>
+                                                  <a href="#">Other Accessories</a>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Generators</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Flashlight & Torch</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Sports Cameras</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Hunting & Shooting</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Recreation</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Apparels</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Athletics</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>	
+                          <li> <a href="#"><div class="Consumerelectronics"><div>Consumer Electronics</div>
+                              <ul class="down4">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">3D Printers & Accessories</a><br>
+                                                  <a href="#">FDM 3D Printers</a><br>
+                                                  <a href="#">SLA 3D Printers</a><br>
+                                                  <a href="#">Electric Skateboards</a><br>
+                                                  <a href="#">3D Printer Accessories</a>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Laser Engravers & Cutters</a><br>
+                                                  <a href="#">Desktop Laser Engravers</a><br>
+                                                  <a href="#">Portable Laser Engravers</a><br>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large">Bluetooth Speakers</a><br>
+                                                  <a href="#">Wireless & Bluetooth Speakers</a><br>
+                                                  <a href="#">Outdoor Speakers</a><br>
+                                                  <a href="#">Accessories</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Headphones & Earphones</a><br>
+                                                  <a href="#">Earbud Headphones</a><br>
+                                                  <a href="#">On-ear & Over-ear Headphones</a><br>
+                                                  <a href="#">Sports & Fitness Headphones</a><br>
+                                                  <a href="#">Headphone Accessories</a><br>
+                                              </div>
+                                              
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large">Professional Instruments & Tools</a><br>
+                                                  <a href="#">Measurement & Analysis Instruments</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Memory Card</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Cameras & Optics</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Power Banks & Chargers</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Audio & Video Accessories</a><br>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="TVBoxesMiniPCs"><div>TV Boxes & Mini PCs</div>
+                              <ul class="down5">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Windows Mini PCs</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Android TV Sticks</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Barebone Mini PC</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">MINI PC Accessories & Gadgets</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Barebone Mini PC</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Bundle & Discount Zone</a><br>
+      
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="ComputersTabletsAccessories"><div>Computers, Tablets & Accessories</div>
+                              <ul class="down6">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Laptops</a><br>
+                                                  <a href="#">Ultrabooks</a><br>
+                                                  <a href="#">Gaming Laptops</a><br>
+                                                  <a href="#">Laptop Accessories</a><br>
+                                                  
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Tablets</a><br>
+                                                  <a href="#">Android Tablets</a><br>
+                                                  <a href="#">Laptop Accessories</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Computer Components</a><br>
+                                                  <a href="#">DIY PC</a><br>
+                                                  <a href="#">SSD & HDD & Enclosures</a><br>
+                                                  <a href="#">PC Power Supplies</a><br>
+                                                  <a href="#">Fan & Cooling</a><br>
+                                                  <a href="#">Monitors</a><br>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Graphic Tablets</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">USB Gadgets</a><br>
+                                                  <a href="#"style="font-size: large; margin-bottom: 10px;">Power Banks & Chargers</a><br>
+                                                  <a href="#" style="font-size: large">USB Gadgets</a><br>
+                                                  <a href="#">Earbud Headphones</a><br>
+                                                  <a href="#">On-ear & Over-ear Headphones</a><br>
+                                                  <a href="#">Sports & Fitness Headphones</a><br>
+                                                  <a href="#">Headphone Accessories</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Tronsmart Chargers</a><br>
+                                                  <a href="#">Tronsmart Wall Chargers</a><br>
+                                                  <a href="#">Tronsmart Cables</a><br>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="ToysHobbies"><div>Toys & Hobbies</div>
+                              <ul class="down7">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">RC Drones</a><br>
+                                                  <a href="#">RC Quadcopters</a><br>
+                                                  <a href="#">FPV Racing Drone</a><br>
+                                                  <a href="#">RC Airplanes</a><br>
+                                                  <a href="#">RC Helicopters</a><br>
+                                                  
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">FPV System</a><br>
+                                                  <a href="#" style="font-size: large">RC Parts</a><br>
+                                                  <a href="#">RC Boat Parts</a><br>
+                                                  <a href="#">RC Car Parts</a><br>
+                                                  <a href="#">RC Quadcopter Parts</a><br>
+                                                  <a href="#">Multi Rotor Parts</a><br>
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large">RC Vehicles</a><br>
+                                                  <a href="#">RC Cars</a><br>
+                                                  <a href="#">RC Boats</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Musical Instruments & Hobbies</a><br>
+                                                  <a href="#">Brass</a><br>
+                                                  <a href="#">Strings</a><br>
+                                                  <a href="#">Drums & Percussion</a><br>
+                                                  <a href="#">Other Musical Instruments</a><br>
+                                                  <a href="#">Other Hobbies</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Toys</a><br>
+                                                  <a href="#">Fidget Toys</a><br>
+                                                  <a href="#">Dolls, Playsets & Toy Figures</a><br>
+                                                  <a href="#">Puzzle Toys</a><br>
+                                                  <a href="#">Holidays & Party</a><br>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="PhonesAccessories"><div>Phones & Accessories</div>
+                              <ul class="down8">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Cell Phones</a><br>
+                                                  <a href="#">5G Smartphones</a><br>
+                                                  <a href="#">4G Smartphones</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Phone Accessories</a><br>
+                                                  <a href="#">Screen Protectors</a><br>
+                                                  <a href="#">Cases & Covers</a><br>
+                                                  <a href="#" style="font-size: large">Apple Accessories</a><br>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="AutomobilesMotorcycles"><div>Automobiles & Motorcycles</div>
+                              <ul class="down9">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car DVRs</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car Alarm & Security</a><br>
+                                                  <a href="#" style="font-size: large;">Car Lights</a><br>
+                                                  <a href="#">Car LED Bulbs</a><br>
+                                                  <a href="#">HID Xenon Lights</a><br>
+                                                  <br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car Audio & Video</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car Chargers</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car Decorations</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car Repair & Maintenance</a><br>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Car Parts & Gadgets</a><br>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="SecuritySystems"><div>Security Systems</div>
+                              <ul class="down11">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Security Cameras</a><br>
+                                                  <a href="#">NVR Kits</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Surveillance DVR Systems</a><br>
+                                                  <a href="#">IP Cameras</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Access Control Systems</a><br>
+                                                  <a href="#">Access Controller & Key</a><br>
+                                                  <a href="#">Video Door Phones</a><br>
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Security System Accessories</a><br>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                          <li> <a href="#"><div class="Fashion"><div>Fashion</div>
+                              <ul class="down12">
+                                  <li> 
+                                      <div style="display: flex;" class="iner">
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large;">Fashion</a><br>
+                                                  <a href="#">Pocket Watches</a><br>
+                                                  <a href="#">Women's Watches</a><br>
+                                                  <a href="#">LED Watches</a><br>
+                                                  
+                                                  
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large; margin-bottom: 10px;">Jewelry</a><br>
+                                                  <a href="#" style="font-size: large">Rings</a><br>
+                                                  <a href="#">Earrings</a><br>
+                                                  <a href="#">Necklaces & Pendants</a><br>
+                                                  <a href="#">Others</a><br>
+                                                  
+                                              </div>
+                                          </div>
+                                          <div style="height: 400px; width: 200px; ">
+                                              <div>
+                                                  <a href="#" style="font-size: large">Clothing</a><br>
+                                                  <a href="#">Uniforms</a><br>
+                                                  <a href="#">Suits</a><br>
+                                                  <a href="#">Shirts & Tops</a><br>
+                                                  <a href="#">Others</a><br>
+      
+                                              </div>
+                                              <div>
+                                                  <a href="#" style="font-size: large">Bags & Shoes</a><br>
+                                                  <a href="#">Shoes</a><br>
+                                                  <a href="#">Handbags, Wallets & Cases</a><br>
+                                                  <a href="#">Shoe Care & Accessories</a><br>
+                                              </div>	
+                                          </div>
+                                      </div>
+                                  </li> 
+                              </ul>
+                          </div></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div id="new"> <a href="./loginfolder/new.html">New</a></div>
+              <div id="topseller"><a href="#">Top Seller</a></div>
+              <div id="live"><a href="./live/livepart.html">Live</a></div>
+              <div id="brand"><a href="./brand/brand.html">Brand</a></div>
+              <div id="clearance"><a href="#">Clearance</a></div>
+              <div id="deals"><a href="./deal/deal.html">Deals</a></div>
+              <div id="bargain"><a href="#">Bargain</a></div>
+              <div id="coupon"><a href="#">Coupon</a></div>
+          </div>
+      </div>
+
+
+<div>
+
+    <div id="headbox">
+      <h1 class="head">Featured Outlet Deals  </h1>
+    </div>
+    <div id="container"></div>
+  
+  <div id="deal">
+    <h2 class="sp">Special Deals</h2>
+    <div>
+      <div>ALL</div>
+      <div>Under $10.00</div>
+      <div> $10.00-$19.99</div>
+      <div>$20.00-$49.99</div>
+    </div>
+
+  </div>
+
+  <div id="container2"></div>
+
+  <div id="box3">
+   
+  <h2 class="h2">Recommondation For You</h2>
+   
+  <div id="container3"></div>
+
+</div>
+
+
+ <!-- footersection -->
+ <div id="footer">
+  <div id="super">
+    <div class="bottom">
+      <div>
+          <div id="sub">
+            <input id="email" type="text" placeholder="Enter email to get a 5% off coupon" maxlength="50">
+            <input id="SendEmail" class="btnSubscribe" type="button"  value="Subscribe"  onclick  ="alert  ('You are successful subscribe my store thank you'  ) " >
+          </div>
+          
+          <div id="para">
+              <h3>About Geekbuying</h3>
+          <p>
+              We at Geekbuying are all about making our customers' lives comfortable and smarter. We have 
+              a massive selection of products and offer unbeatable prices.
+              If you are looking for the latest and the greatest product in categories like smart home
+              and outdoor gadgets, Geekbuying is where you should be! <br>
+              Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness
+              equipment like treadmills, top of the line home and office furniture, outdoor items including e-bikes, scooters, and other consumer goods like TV boxes, RC Toys and so much more! Shop for your favorite brands and products today!
+          
+          </p>
+          <h3>Popular Searches</h3>
+      </div>
+          
+      
+      </div>
+      <div>
+          <div id="facebook">
+              <div>
+                  <a href="https://www.facebook.com/profile.php?id=100031941976308"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa2hZx2HT5-mPE1fNRM4H6iKPPnEi_y1TJyg&usqp=CAU"> </a>
+              </div>
+              <div>
+                  <a href="https://www.youtube.com/results?search_query=masai+interview+questions"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ1i-il-8tIfn_xQlHLP8RfGhes7fmGHsyCw&usqp=CAU"></a>
+              </div>
+              <div> <a href="https://web.telegram.org/z/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTVcTOZYyrz6hf1wC5AMoO0mQmBTapkYlkg&usqp=CAU" alt=""></a>
+              </div>
+              <div>
+                  <a href="https://www.instagram.com/?hl=hi"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FLkBp9Lvl4pDF1TAz4e5r7nUC8GH4t6u3g&usqp=CAU" alt=""></a>
+              </div>
+              <div>
+                  <a href="https://twitter.com/ajeetsinghbhabu/lists"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwYRCnVdVluvYMKxUq8TaPiW0C3zuAvTgqZw&usqp=CAU" alt=""></a>
+              </div>
+              
+              <div>
+                  <a href="https://blog.geekbuying.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2K3xmRWP_D8Q6ORSgwAxxnDv3NcYLTsOSg&usqp=CAU" alt=""></a>
+              </div>
+              
+          </div>
+          <div id="android">
+              <div>
+                  <a href="https://m.geekbuying.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkogilRaQ_JOTQXv4MQzImsAsb7keQamxXMA&usqp=CAU" alt=""></a>
+              </div>
+              <div>
+                  <a href="https://geekbuying.app.link/pcwebandroid"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM41UDKF9JzhCsASRoE1zyKp1_LwkGEM6RWQ&usqp=CAU" alt=""></a>
+              </div>
+              <div>
+                  <a href="https://geekbuying.app.link/pcwebios"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-zQK022878CUJB6kJR2djj1i5-H2Yo6_fw&usqp=CAU" alt=""></a>
+              </div>
+          </div>
+          <div id="help">
+              <div style="margin-left: 5px" >
+                  <h3>Help</h3>
+                  <p>Order status</p>
+                  <p>About us</p>
+                  <p>Contact us</p>
+                  <p>Warranty</p>
+                  <p>FAQs</p>
+                  <p>Sitemap</p>
+                  
+
+              </div>
+              <div>
+                  <h3>Support</h3>
+                  <p>Payment information</p>
+                  <p>Shipping guide</p>
+                  <p>Wholesale</p>
+                  <p>Affiliates</p>
+                  <p>Student discount</p>
+                  <p>Youth discount</p>
+                  <p>Request a sample</p>
+              </div>
+              <div>
+                  <h3>Policies</h3>
+                  <p>Terms & conditions</p>
+                  <p>Return policy</p>
+                  <p>Privacy</p>
+                  <p>Declaration</p>
+                  <p>Customs</p>
+                  <p>Ajeet Singh</p>
+              </div>
+
+          </div>
+
+      </div>
+      
+  
+  </div>
+  <div id="geek"> 
+      <div>Geekbuying Coupon</div>
+      <div>Roborock Q7 Max</div>
+      <div>Tronsmart Bluetooth Speakers</div>
+      <div> Windows Mini PC</div>
+      <div>android tv boxes</div>
+      <div> LDS Robot Vacuum</div>
+      <div> Electric Bike</div>
+      <div>OnexPlayer mini AMD</div>
+
+  </div>
+  <div id="lang">
+      <h3>English || Español || Français || Deutsch || Italiano || Português || Nederlands || Polski || Русский || Türkçe || ελληνικά || Magyar || لعربية || עברי 日本語</h3>
+      <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg?v=20220322" alt="">
+  </div>
+</div>
+</div>
+
+
+
+
+</body>
+
+
+
+<script>
+    var Data = [
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-12-25/XIAOMI-Mijia-Bluetooth-Thermometer-2-893971-._w280_p1_.jpg",
+        name: "XIAOMI 4pc mijia bluetooth Thermometer Hygrometer 2",
+        price: " ₹1567.30 ",
+        price1: "₹2364.35",
+        off:"33% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2018-04-13/flytec-5-generation-rc-boat-black-1571985710189._w280_p1_.jpg",
+        name: "Flytec 2011-5 Intelligent Fishing Bait RC Boat Double Motors 500M ",
+        price:"₹ 10248.16",
+        price1:"₹13401.69" ,
+        off:"24% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2017-10-18/5pcs-xiaomi-mijia-aqara-body-sensor-white-1574132337393._w280_p1_.jpg",
+        
+        name: "5pcs Xiaomi Mijia Aqara Body Sensor ZigBee WiFi Wireless",
+        price: "₹ 7094.64",
+        price1: "",
+        off:"",
+      },
+
+   
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2021-01-13/Violin-Full-Set-with-Bow-and-Chin-Rest-Dark-Wood-4-4-427848-0._w280_p1_.jpg",
+        
+        name: "Violin Full Set with Bow and Chin Rest Dark Wood 4/",
+        price:"₹ 4887.17",
+        price1: "",
+        off:"",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2021-01-09/Xiaomi-AIoT-AX6000-Wireless-Dual-Band-Router-Black-427155-0._w280_p1_.jpg",
+          
+        name: " Xiaomi AIoT Router AX6000 WiFi 6 Enhanced Edition 6000Mbps",
+        price: "₹ 13401.69 ",
+        price1: "₹22862.26",
+        off:"41% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-05-09/HandFan-Portable-Handheld-Spray-Fan-Black-903960-._w280_p1_.jpg",
+        name: " Portable Multi-function Handheld Folding Fan Cool Down Humidify ",
+        price: " ₹ 1733.65",
+        price1: "",
+        off:"",
+      },
+
+     {
+        image_url:
+        "https://img.gkbcdn.com/p/2018-03-05/philips-led-barrel-lamp-100mm-hole-5w-4000k-white-1571986853755._w280_p1_.jpg",
+        name: "Philips LED Barrel Lamp 100mm Hole 5W 4000K - White",
+        price: " ₹ 653.57 ",
+        price1: "₹708.75",
+        off:"8% OFF",
+      },
+     
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg",
+        name: "KingSmith WalkingPad R1 Pro Treadmill 2 in 1 Smart Folding ",
+        price: "₹ 39418.26",
+        price1: "₹63069.69",
+        off:"38% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-11-12/jbl-charge-4-bluetooth-hd-stereo-speaker-grey-1574132807704._w280_p1_.jpg",
+        name: "JBL Charge 4 Bluetooth HD Stereo Speaker IPX7 Type-C 20 Hours ",
+        price: "₹ 13401.69",
+        price1:"₹18605.00",
+        off:"28% OFF",
+      },
+      
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-04-18/mecool-km9-pro-amlogic-s905x2-android-tv-9-0-4gb-32b-tv-box-1571982172624._w280_p1_.jpg",
+        name: "MECOOL KM9 Pro Google Certified Amlogic S905X2 Android ",
+        price: " ₹ 6306.26",
+        price1: "₹7094.64",
+        off:"11% OFF",
+      },
+      ];
+
+
+    
+
+
+
+
+      var Data2 = [
+      {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-11-01/Oclean-W1-Oral-Irrigator-White-475349-0._w280_p1_.jpg",
+    name: "Tronsmart Apollo Air TWS ANC Headphones Qualcomm QCC3046 ",
+    price: "₹ 2049.00",
+    price1:"₹5517.88",
+    off:"63% OFF",
+  },
+  
+  {
+    image_url:
+      "https://content.shop4reebok.com/static/Product-EX4285/reebok_EX4285_1.jpg.plp ",
+    name: "Oclean W1 Portable Electric Oral Irrigator Wireless Water Resistant",
+    price: "₹ 4650.66",
+    price1:"₹7094.64",
+    off:"33% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-11-01/Oclean-W1-Oral-Irrigator-Blue-475348-0._w280_p1_.jpg",
+    name: "Oclean W1 Portable Electric Oral Irrigator Wireless Water Resistant ",
+    price:"₹ 4729.50",
+    price1:"₹7094.64",
+    off:"33% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-05-13/Netac-Z-Slim-512GB-Type-C-Interface-USB-3-1-Portable-Mobile-SSD-Silver-904053-._w280_p1_.jpg",
+    name: "Netac Z Slim 512GB Type-C Interface USB 3.1 Portable Mobile",
+    price: " ₹ 8513.73",
+    price1: "₹8986.76",
+    off:"5% OFF",
+  },
+  
+  {
+    image_url:
+      "https://img.gkbcdn.com/p/2021-04-12/7inch-Handheld-Game-Console-32GB-5000--Games-458418-1._w280_p1_.jpg" ,
+    name: "PS7000 7inch Handheld Game Console 32GB 5000+ Games ",
+    price:" ₹ 5517.88",
+    price1:"₹6306.26",
+    off:"13% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-05-25/Apollo-Air-Plus-Qualcomm-QCC3046-ANC-TWS-Earphones-White-459845-1._w280_p1_.jpg",
+    name: " Tronsmart Apollo Air+ ANC TWS Earphones Qualcomm QCC3046 ",
+    price:" ₹ 2995.06",
+  price1:"₹7883.02",
+  off:"62% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-04-07/JIMMY-JV85-Cordless-Stick-Vacuum-Cleaner-Brush-458297-0._w280_p1_.jpg",
+    name: "Floor Brush (Brush Head + Bursh) For JIMMY JV85 Handheld",
+    price:"  ₹ 5202.53 ",
+    price1:"₹7094.64",
+    off:"27% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-04-07/JIMMY-JV85-Cordless-Stick-Vacuum-Cleaner-Brush-458297-0._w280_p1_.jpg",
+    name: "Floor Brush (Brush Head + Bursh) For JIMMY JV85 Handheld",
+    price:"  ₹ 5202.53 ",
+    price1:"₹7094.64",
+    off:"27% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-04-07/Origina-Soft-brush-kit-for-JIMMY-JV53-JV63-JV65-JV83-Vacuum-Cleaner-458290-0._w280_p1_.jpg",
+    name: "Original Soft Brush Kit for JIMMY JV53/JV63/JV65/JV83 Handheld",
+    price:"₹ 1024.11 ",
+    price1:"₹1260.62",
+    off:"19% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-03-09/JIMMY-H8-Cordless-Handheld-Flexible-Vacuum-Cleaner-Blue-455909-0._w280_p1_.jpg",
+    name: "JIMMY H8 Lightweight Smart Handheld Cordless Vacuum ",
+    price: "₹ 16555.21 ",
+    price1:"₹20383.59",
+    off:"19% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-11-26/Spare-Part-for-KUGOO-M4-PRO-426858-0._w280_p1_.jpg",
+    name: "10 inch Outer Tire for KUGOO M4 Pro Electric Scooter Spare Part",
+    price:" ₹ 2522.03",
+    price1:"",
+    off:"",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-11-18/xiaomi-jimmy-jv85-pro-cordless-handheld-vacuum-cleaner---purple-1605682136063._w280_p1_.jpg",
+    name: "JIMMY JV85 Pro Cordless Handheld Flexible Vacuum Cleaner",
+    price:" ₹ 29169.31",
+    price1:"₹39418.26",
+    off:"26% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2019-06-14/scooter-front-tube-bag-tools-storage-for-xiaomi-mijia-m365-1574132417833._w280_p1_.jpg",
+    name: "Front Tube Bag Large Capacity Tools Storage for Electric Scooter ",
+    price:" ₹ 1575.97",
+    price1:"",
+    off:"",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-18/JIMMY-JV85-Cordless-Handheld-Vacuum-Cleaner-23000Pa-Suction-426268-0._w280_p1_.jpg",
+    name: " JIMMY JV85 Smart Cordless Handheld Vacuum Cleaner ",
+    price:" ₹ 16161.02",
+    price1:"₹23650.64",
+    off:"32% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-10-12/P301-ANC-Bluetooth-5-0-TWS-Earbuds-426451-0._w280_p1_.jpg",
+    name: " P301 ANC Bluetooth 5.0 TWS Earbuds Touch Control Active",
+    price: "   ₹ 2916.22",
+    price1:"₹3941.12",
+    off:"26% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-10-03/H96-MAX-H616-Allwinner-H616-4GB-32GB-TV-Box-426409-1._w280_p1_.jpg",
+    name: "H96 MAX H616 4GB/32GB Android 10 TV Box Android 10.0 Allwinner ",
+    price:" ₹ 2916.22 ",
+  price1: "₹ 2916.22",
+  off:"20% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-10-03/H96-MAX-H616-Allwinner-H616-2GB-16GB-TV-Box-426404-0._w280_p1_.jpg",
+    name: "H96 MAX H616 2GB/16GB Android 10 TV Box Allwinner H616 ",
+    price:" ₹ 2758.55",
+    price1: "₹3152.74",
+    off:"13% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-25/Oclean-X-Pro-Global-Version-Smart-Sonic-Electric-Toothbrush-Blue-426361-0._w280_p1_.jpg",
+    name: " Xiaomi Oclean X Pro Global Version Smart Sonic Electric Adult Toothbrush",
+    price:"₹ 5123.69",
+    price1:"₹7883.02",
+    off:"35% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-19/GameSir-X2-Type-C-Mobile-Gaming-Controller-for-Android-426285-0._w280_p1_.jpg",
+    name: "GameSir X2 Type-C Mobile Gaming Controller for Android Retractable",
+    price: "₹ 5517.88",
+   price1: "₹6779.29",
+   off:"19% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-04/jimmy-jv65-handheld-cordless-stick-vacuum-cleaner---water-tank---red--1599215100359._w280_p1_.jpg",
+    name: "JIMMY JV65 Plus Cordless Handheld Vacuum Cleaner 2 in 1",
+    price: " ₹ 18131.97",
+   price1: "₹23650.64",
+   off:"23% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-16/PS3000-64GB-Gaming-Stick-10000--Games-426226-0._w280_p1_.jpg",
+    name: "PS3000 64GB 4K Retro Game Stick with 2 Wireless Gamepads",
+    price: "₹ 3941.12",
+    price1:"₹4729.50",
+    off:"17% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg",
+    name: "KingSmith WalkingPad R1 Pro Treadmill 2 in 1 Smart Folding",
+    price: "₹ 39418.26",
+   price1: "₹63069.69 ",
+   off:"39% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-05/A95X-DB-Android-9-0-S905X3-B-4GB-32GB-TV-BOX-426144-0._w280_p1_.jpg",
+    name: "AX95 DB Android 9.0 S905X3-B 4GB/32GB TV BOX 8K HDR 10+",
+    price:" ₹ 4650.66 ",
+    price1:"₹5517.88",
+    off:"16% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-05/Haylou-T16-Bluetooth-5-0-ANC-TWS-Earbuds-426142-0._w280_p1_.jpg",
+    name: "Haylou T16 Bluetooth 5.0 ANC TWS Earbuds 30H Battery Life",
+    price: " ₹ 5517.88 ",
+    price1: "",
+    off:"",
+   
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-17/ALLDOCUBE-iplay20-PRO-4G-LTE-Tablet-PC-10-1-426016-0._w280_p1_.jpg",
+    name: "ALLDOCUBE iPlay 20 Pro 4G LTE Tablet PC UNISOC SC9863A",
+    price: " ₹ 14978.45",
+    price1: "₹18920.36",
+    off:"21% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-12/Air-6-Pro-TWS-Earphones-425983-0._w280_p1_.jpg",
+    name: "Air 6 Pro TWS Earphones Charging Case with LED Display IPX4 Water",
+    price: " ₹ 1181.78",
+    price1: "",
+    off:"",
+   
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-06/xiaomi-air-lite-tws-earphones--1596681080473._w280_p1_.jpg",
+    name: "International Edition] Xiaomi Air Lite Earphones TWS ENC Noice",
+    price:"₹ 2758.55",
+   price1: "₹3152.74",
+   off:"13% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-03/Car-Tyre-Pump-12V-150PSI-Rechargeable---Black-425899-0._w280_p1_.jpg",
+    name: "Cordless Tire Inflator Portable Compressor Digital Car Tire Pump",
+    price:"₹ 3152.74",
+   price1:"₹3704.60",
+   off:"15% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-07-29/JIMMY-JV85-Pro-Wireless-Vacuum-Cleaner-Purple-425873-0._w280_p1_.jpg",
+    name: "JIMMY JV85 Pro Cordless Handheld Flexible Vacuum Cleaner",
+    price:"₹ 21285.50",
+    price1:"₹31534.45 ",
+    off:"33% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-04-14/xiaomi-redmi-airdots-s-bluetooth5-0-tws-earbuds-realtek-rtl8763vxp--1586865937888._w280_p1_.jpg",
+    name: "Xiaomi Redmi AirDots 2 TWS Earbuds Bluetooth5.0 DSP Noise",
+    price: "₹ 1970.16",
+    price1:"₹2364.35",
+    off:"17% OFF",
+  },
+    
+    ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Data3 = [
+{
+    image_url:
+    "https://img.gkbcdn.com/p/2019-12-25/TicPods-2-Pro-AI-TWS-Wireless-Smart-Headphone-Blue-888800-._w280_.jpg",
+    name: "TicPods 2 Pro AI Qualcomm QCC5121 Earbuds ENC Posture",
+    price:"₹ 7883.02",
+    price1:"₹11035.76 ",
+   
+  },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-11-26/PaMu-Slide-mini-TWS-Bluetooth5-0-Noising-reduction-Earbuds-889639-._w280_.jpg",
+        name: "PaMu Slide Mini Qualcomm QCC3020 TWS Earbuds Wireless",
+        price:"₹ 6858.13",
+        price1: "",
+      },
+
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-05-23/minix-neo-c-ssd-usb-c-hub-with-240g-ssd-space-gray-1571991105074._w280_.jpg",
+        
+        name: "MINIX NEO S2 SSD USB-C Multiport Storage HUB",
+        price: "₹ 6779.29",
+        price1: "₹8671.40",
+       
+      },
+
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-04-22/sabbat-e12-bluetooth-5-0-tws-earphone-gunmetal-1587519936946._w280_.jpg",
+        
+        name: "Sabbat E12 Ultra Qualcomm QCC3020 CVC8.0 TWS Earbuds ",
+        price:"₹ 3941.12",
+        price1: "₹5202.53",
+  
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-08-12/Air-6-TWS-Earphones-425984-0._w280_.jpg",
+          
+        name: " Air 6 TWS Earphones IPX4 Water Resistant Auto Connect ",
+        price: "₹ 787.59 ",
+        price1: "₹1397.01",
+       
+      },
+    
+
+]
+
+
+  
+    Data.map(function (elem) {
+      var box = document.createElement("div");
+      box.className="box"
+  
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.className="img"
+  
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.className="name"
+  
+      var price = document.createElement("p");
+      price.innerText = elem.price;
+      price.className="price";
+
+      var price1 = document.createElement("p");
+      price1.innerText = elem.price1;
+      price1.className="price1"
+
+      var off = document.createElement("p");
+     off.innerText = elem.off;
+      off.className="off"
+
+      box.append(img, name, price,price1,off);
+  
+      document.querySelector("#container").append(box);
+    });
+    Data2.map(function (elem) {
+      var box = document.createElement("div");
+      box.className="box"
+  
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.className="img"
+  
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.className="name"
+  
+      var price = document.createElement("p");
+      price.innerText = elem.price;
+      price.className="price";
+
+      var price1 = document.createElement("p");
+      price1.innerText = elem.price1;
+      price1.className="price1"
+
+      var off = document.createElement("p");
+     off.innerText = elem.off;
+      off.className="off"
+
+      box.append(img, name, price,price1,off);
+  
+      document.querySelector("#container2").append(box);
+    });
+
+    Data3.map(function (elem) {
+      var box = document.createElement("div");
+      box.className="box"
+  
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.className="img"
+  
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.className="name"
+  
+      var price = document.createElement("p");
+      price.innerText = elem.price;
+      price.className="price";
+
+      var price1 = document.createElement("p");
+      price1.innerText = elem.price1;
+      price1.className="price1"
+
+    
+
+      box.append(img, name, price,price1);
+  
+      document.querySelector("#container3").append(box);
+    });
+    
+  </script>
+
+
