@@ -1,0 +1,458 @@
+/* navbar start --------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------- */
+.main{
+    width: 70%;
+    margin: auto;
+}
+select,input,button{
+    border: 0;
+    background: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbarr{
+    height: 125px;
+    width: 100%;
+    padding-left: 40px;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+.nav-link{
+	color: black;
+	margin-right: 20px;
+}
+.navbar{
+	padding-left: 450px;
+	width: 100%;
+	height: 20px;
+}
+.dropdown-menu{
+	font-size: larger;
+	color: black;
+}
+.ourimg1{
+    height: 200px;
+    width: 250px;
+    padding-right: 25px;
+}
+.ourimg img{
+    width: 100%;
+}
+.ourimg{
+    height: 100px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "a b b"
+    "a c c"
+}
+.ourimg>div:nth-child(1){
+    grid-area: a;
+    height: 100px;
+    width: 100px;
+}
+.ourimg>div:nth-child(2){
+    grid-area: b;
+}
+.ourimg>div:nth-child(3){
+    grid-area: c;
+}
+.nri1{
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+}
+.nri1>select{
+    border: 1px solid;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.nri1>button{
+    margin-left: 200px;
+    background-color: orange;
+    height: 20px;
+    width: 50px;
+}
+
+.two{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.two>img{
+    height: 80px;
+    cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+.two1{
+    height: 30px;
+    width: 500px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: flex;
+}
+.two1>input{
+    width: 400px;
+}
+.two1>input{
+    width: 400px;
+}
+.allcategories{
+    height: 30px;
+    width: 100px;
+    margin-top: 5px;
+}
+.allcategories+label{
+    margin-top: 5px;
+}
+.two1>button{
+    height: 30px;
+    width: 50px;
+    background-color: #3199ce;
+    cursor: pointer;
+}
+#search>img{
+    height: 25px;
+}
+.two2{
+    display: flex;
+   
+}
+.two2>div{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.two2>div>img,#cart>img{
+    height: 30px;
+    margin-bottom: 16px;
+}
+.two2>div>div{
+    margin-left: 20px;
+    height: 50px;
+}
+.two2>div>div>p{
+    margin: 0;
+}
+.signin{
+    display: none;
+    position: absolute;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.signin1:hover .signin{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+    transform: translateY(230px);
+}
+#signin,#createaccount{
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    margin-top: 10px;
+}
+.signin>li>div{
+    text-align: center;
+}
+#cartcount{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+}
+.three{
+    display: flex;
+    font-weight: bold;
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 14px;
+}
+.three>div,select{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.three2{
+    height: 30px;
+    width: 150px;
+}
+.down0{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.three2:hover .down0{
+    
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+    z-index: 1;
+}
+.down1{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 222px;
+    transform: translatey(-27px);
+}
+.Localwarehouses:hover .down1{
+    height: 300px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+	width: 600px;
+}
+.down2{
+    height: 300px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-60px);
+	padding: 0;
+    
+}
+.Smarthomegarden:hover .down2{
+	width: 800px;
+    display: block;
+    display: flex;
+    text-align: left;
+    padding-left: 500px;
+    justify-content: space-around;
+    align-items: right; 
+    background-color: white;
+}
+.down3{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-100px);
+}
+.Sportsoutdoors:hover .down3{
+	width: 800px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down4{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 225px;
+    transform: translatey(-135px);
+}
+.Consumerelectronics:hover .down4{
+	width: 800px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down5{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-173px);
+}
+.TVBoxesMiniPCs:hover .down5{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down6{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-208px);
+}
+.ComputersTabletsAccessories:hover .down6{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down7{
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-245px);
+}
+.ToysHobbies:hover .down7{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down8{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-283px);
+}
+.PhonesAccessories:hover .down8{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down9{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-320px);
+}
+.AutomobilesMotorcycles:hover .down9{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down10{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 250px;
+    transform: translatey(-325px);
+}
+.WearableDevices:hover .down10{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down11{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-357px);
+}
+.SecuritySystems:hover .down11{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down12{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-left: 220px;
+    transform: translatey(-390px);
+}
+.Fashion:hover .down12{
+	width: 600px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.iner>div{
+	margin-right: 10px;
+	margin-left: 0;
+}
+.iner>div>div{
+	margin-bottom: 10px;
+}
+
+
+/* navbar end --------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------- */
+/* navbar start --------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------- */
+

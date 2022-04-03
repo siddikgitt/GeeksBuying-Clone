@@ -2,9 +2,7 @@
     height:1500px;
     width:100%;
    margin:auto;
-    /* margin-left: 7%;
-    margin-right: 5%;
-     */
+   padding-top: 150px;
 }
 #first{
     /* border:1px solid red; */
@@ -92,7 +90,7 @@ color:#9f8d97;
     justify-content: space-between;
     
 }
-button{
+.btnbutton{
 height:33px;
 width:100px;
 background-color: white;
@@ -106,7 +104,7 @@ border:1px solid #d6cfd3;
     padding-right: 5px;
     color: #9f8d97;
 }
-#select{
+#selectAll{
 height:33px;
 width:230px;
 background-color: white;
@@ -157,7 +155,7 @@ margin-right: 10px;
 
 /* footerpart */
 #footer{
-    margin-top: 150px;
+    margin-top: 300px;
     /* border:1px solid red; */
    
 }
