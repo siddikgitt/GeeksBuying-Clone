@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.html">
+
+
+
+    <title>Document</title>
+  <style>
+    *body{
+      background-color: #f2f2f2;
+    }
+ #container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+       
+      }
+      
+      #headbox{
+        width:100%;
+        height:160px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        margin-bottom: 30px;
+        background-color: #b2ddff;
+      }
+      .head{
+        text-align: center;
+        padding:55px;
+      }
+
+      .box{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      }
+    .img{
+      height: 180px;
+      width: 180px;
+      margin: auto;
+      padding:20px ;
+    }
+    .name{
+      font-size: 15px;
+      padding-left: 7px;
+    }
+    .price{
+     line-height: 0%;
+      color:#d84141;
+      font-size: 20px;
+      font-weight: bolder;
+      padding-left: 7px;
+    }
+    .price1{
+      line-height: 5px;
+      font-size: 16px;
+      padding-left: 7px;
+      color: gray;
+      text-decoration-line:line-through;
+    }
+    #deal{
+     width: 80%;
+     height:180px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+     margin: auto;
+    }
+    .sp{
+      text-align: center;
+      padding: 20px;
+    }
+    #container2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+       
+      }
+      #container>div:hover{
+                  transform: scale(1.019);
+      }
+      .off{
+        background-color: #d84141;
+        color:white;
+        width:27%;
+        margin-left: 7px;
+        font-size: 14px;
+      }
+     
+      .h2{
+        margin-left: 10%;
+      }
+      #container3{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+       margin-top: 20px;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      }
+      #container2>div:hover{
+                  transform: scale(1.019);
+      }
+      #container3>div:hover{
+                  transform: scale(1.019);
+      }
+
+  
+     #deal>div{
+       margin: auto;
+       display: flex;
+       height:80px;
+       width:85%;
+       box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+     }
+     #deal>div>div{
+       text-align: center;
+       padding: 30px;
+       font-size: 20px;
+       gap:20px;
+       margin-left: 80px;
+     }
+
+  </style>
+    
+
+  </head>
+
+  <body>
+    <div id="headbox">
+      <h1 class="head">Featured Outlet Deals  </h1>
+    </div>
+    <div id="container"></div>
+  
+  <div id="deal">
+    <h2 class="sp">Special Deals</h2>
+    <div>
+      <div>ALL</div>
+      <div>Under $10.00</div>
+      <div> $10.00-$19.99</div>
+      <div>$20.00-$49.99</div>
+    </div>
+
+  </div>
+
+  <div id="container2"></div>
+
+  <div id="box3">
+   
+  <h2 class="h2">Recommondation For You</h2>
+   
+  <div id="container3"></div>
+</body>
+
+
+
+<script>
+    var Data = [
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-12-25/XIAOMI-Mijia-Bluetooth-Thermometer-2-893971-._w280_p1_.jpg",
+        name: "XIAOMI 4pc mijia bluetooth Thermometer Hygrometer 2",
+        price: " ₹1567.30 ",
+        price1: "₹2364.35",
+        off:"33% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2018-04-13/flytec-5-generation-rc-boat-black-1571985710189._w280_p1_.jpg",
+        name: "Flytec 2011-5 Intelligent Fishing Bait RC Boat Double Motors 500M ",
+        price:"₹ 10248.16",
+        price1:"₹13401.69" ,
+        off:"24% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2017-10-18/5pcs-xiaomi-mijia-aqara-body-sensor-white-1574132337393._w280_p1_.jpg",
+        
+        name: "5pcs Xiaomi Mijia Aqara Body Sensor ZigBee WiFi Wireless",
+        price: "₹ 7094.64",
+        price1: "",
+        off:"",
+      },
+
+   
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2021-01-13/Violin-Full-Set-with-Bow-and-Chin-Rest-Dark-Wood-4-4-427848-0._w280_p1_.jpg",
+        
+        name: "Violin Full Set with Bow and Chin Rest Dark Wood 4/",
+        price:"₹ 4887.17",
+        price1: "",
+        off:"",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2021-01-09/Xiaomi-AIoT-AX6000-Wireless-Dual-Band-Router-Black-427155-0._w280_p1_.jpg",
+          
+        name: " Xiaomi AIoT Router AX6000 WiFi 6 Enhanced Edition 6000Mbps",
+        price: "₹ 13401.69 ",
+        price1: "₹22862.26",
+        off:"41% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-05-09/HandFan-Portable-Handheld-Spray-Fan-Black-903960-._w280_p1_.jpg",
+        name: " Portable Multi-function Handheld Folding Fan Cool Down Humidify ",
+        price: " ₹ 1733.65",
+        price1: "",
+        off:"",
+      },
+
+     {
+        image_url:
+        "https://img.gkbcdn.com/p/2018-03-05/philips-led-barrel-lamp-100mm-hole-5w-4000k-white-1571986853755._w280_p1_.jpg",
+        name: "Philips LED Barrel Lamp 100mm Hole 5W 4000K - White",
+        price: " ₹ 653.57 ",
+        price1: "₹708.75",
+        off:"8% OFF",
+      },
+     
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg",
+        name: "KingSmith WalkingPad R1 Pro Treadmill 2 in 1 Smart Folding ",
+        price: "₹ 39418.26",
+        price1: "₹63069.69",
+        off:"38% OFF",
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-11-12/jbl-charge-4-bluetooth-hd-stereo-speaker-grey-1574132807704._w280_p1_.jpg",
+        name: "JBL Charge 4 Bluetooth HD Stereo Speaker IPX7 Type-C 20 Hours ",
+        price: "₹ 13401.69",
+        price1:"₹18605.00",
+        off:"28% OFF",
+      },
+      
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-04-18/mecool-km9-pro-amlogic-s905x2-android-tv-9-0-4gb-32b-tv-box-1571982172624._w280_p1_.jpg",
+        name: "MECOOL KM9 Pro Google Certified Amlogic S905X2 Android ",
+        price: " ₹ 6306.26",
+        price1: "₹7094.64",
+        off:"11% OFF",
+      },
+      ];
+
+
+    
+
+
+
+
+      var Data2 = [
+      {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-11-01/Oclean-W1-Oral-Irrigator-White-475349-0._w280_p1_.jpg",
+    name: "Tronsmart Apollo Air TWS ANC Headphones Qualcomm QCC3046 ",
+    price: "₹ 2049.00",
+    price1:"₹5517.88",
+    off:"63% OFF",
+  },
+  
+  {
+    image_url:
+      "https://content.shop4reebok.com/static/Product-EX4285/reebok_EX4285_1.jpg.plp ",
+    name: "Oclean W1 Portable Electric Oral Irrigator Wireless Water Resistant",
+    price: "₹ 4650.66",
+    price1:"₹7094.64",
+    off:"33% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-11-01/Oclean-W1-Oral-Irrigator-Blue-475348-0._w280_p1_.jpg",
+    name: "Oclean W1 Portable Electric Oral Irrigator Wireless Water Resistant ",
+    price:"₹ 4729.50",
+    price1:"₹7094.64",
+    off:"33% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-05-13/Netac-Z-Slim-512GB-Type-C-Interface-USB-3-1-Portable-Mobile-SSD-Silver-904053-._w280_p1_.jpg",
+    name: "Netac Z Slim 512GB Type-C Interface USB 3.1 Portable Mobile",
+    price: " ₹ 8513.73",
+    price1: "₹8986.76",
+    off:"5% OFF",
+  },
+  
+  {
+    image_url:
+      "https://img.gkbcdn.com/p/2021-04-12/7inch-Handheld-Game-Console-32GB-5000--Games-458418-1._w280_p1_.jpg" ,
+    name: "PS7000 7inch Handheld Game Console 32GB 5000+ Games ",
+    price:" ₹ 5517.88",
+    price1:"₹6306.26",
+    off:"13% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-05-25/Apollo-Air-Plus-Qualcomm-QCC3046-ANC-TWS-Earphones-White-459845-1._w280_p1_.jpg",
+    name: " Tronsmart Apollo Air+ ANC TWS Earphones Qualcomm QCC3046 ",
+    price:" ₹ 2995.06",
+  price1:"₹7883.02",
+  off:"62% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-04-07/JIMMY-JV85-Cordless-Stick-Vacuum-Cleaner-Brush-458297-0._w280_p1_.jpg",
+    name: "Floor Brush (Brush Head + Bursh) For JIMMY JV85 Handheld",
+    price:"  ₹ 5202.53 ",
+    price1:"₹7094.64",
+    off:"27% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-04-07/JIMMY-JV85-Cordless-Stick-Vacuum-Cleaner-Brush-458297-0._w280_p1_.jpg",
+    name: "Floor Brush (Brush Head + Bursh) For JIMMY JV85 Handheld",
+    price:"  ₹ 5202.53 ",
+    price1:"₹7094.64",
+    off:"27% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-04-07/Origina-Soft-brush-kit-for-JIMMY-JV53-JV63-JV65-JV83-Vacuum-Cleaner-458290-0._w280_p1_.jpg",
+    name: "Original Soft Brush Kit for JIMMY JV53/JV63/JV65/JV83 Handheld",
+    price:"₹ 1024.11 ",
+    price1:"₹1260.62",
+    off:"19% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2021-03-09/JIMMY-H8-Cordless-Handheld-Flexible-Vacuum-Cleaner-Blue-455909-0._w280_p1_.jpg",
+    name: "JIMMY H8 Lightweight Smart Handheld Cordless Vacuum ",
+    price: "₹ 16555.21 ",
+    price1:"₹20383.59",
+    off:"19% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-11-26/Spare-Part-for-KUGOO-M4-PRO-426858-0._w280_p1_.jpg",
+    name: "10 inch Outer Tire for KUGOO M4 Pro Electric Scooter Spare Part",
+    price:" ₹ 2522.03",
+    price1:"",
+    off:"",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-11-18/xiaomi-jimmy-jv85-pro-cordless-handheld-vacuum-cleaner---purple-1605682136063._w280_p1_.jpg",
+    name: "JIMMY JV85 Pro Cordless Handheld Flexible Vacuum Cleaner",
+    price:" ₹ 29169.31",
+    price1:"₹39418.26",
+    off:"26% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2019-06-14/scooter-front-tube-bag-tools-storage-for-xiaomi-mijia-m365-1574132417833._w280_p1_.jpg",
+    name: "Front Tube Bag Large Capacity Tools Storage for Electric Scooter ",
+    price:" ₹ 1575.97",
+    price1:"",
+    off:"",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-18/JIMMY-JV85-Cordless-Handheld-Vacuum-Cleaner-23000Pa-Suction-426268-0._w280_p1_.jpg",
+    name: " JIMMY JV85 Smart Cordless Handheld Vacuum Cleaner ",
+    price:" ₹ 16161.02",
+    price1:"₹23650.64",
+    off:"32% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-10-12/P301-ANC-Bluetooth-5-0-TWS-Earbuds-426451-0._w280_p1_.jpg",
+    name: " P301 ANC Bluetooth 5.0 TWS Earbuds Touch Control Active",
+    price: "   ₹ 2916.22",
+    price1:"₹3941.12",
+    off:"26% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-10-03/H96-MAX-H616-Allwinner-H616-4GB-32GB-TV-Box-426409-1._w280_p1_.jpg",
+    name: "H96 MAX H616 4GB/32GB Android 10 TV Box Android 10.0 Allwinner ",
+    price:" ₹ 2916.22 ",
+  price1: "₹ 2916.22",
+  off:"20% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-10-03/H96-MAX-H616-Allwinner-H616-2GB-16GB-TV-Box-426404-0._w280_p1_.jpg",
+    name: "H96 MAX H616 2GB/16GB Android 10 TV Box Allwinner H616 ",
+    price:" ₹ 2758.55",
+    price1: "₹3152.74",
+    off:"13% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-25/Oclean-X-Pro-Global-Version-Smart-Sonic-Electric-Toothbrush-Blue-426361-0._w280_p1_.jpg",
+    name: " Xiaomi Oclean X Pro Global Version Smart Sonic Electric Adult Toothbrush",
+    price:"₹ 5123.69",
+    price1:"₹7883.02",
+    off:"35% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-19/GameSir-X2-Type-C-Mobile-Gaming-Controller-for-Android-426285-0._w280_p1_.jpg",
+    name: "GameSir X2 Type-C Mobile Gaming Controller for Android Retractable",
+    price: "₹ 5517.88",
+   price1: "₹6779.29",
+   off:"19% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-04/jimmy-jv65-handheld-cordless-stick-vacuum-cleaner---water-tank---red--1599215100359._w280_p1_.jpg",
+    name: "JIMMY JV65 Plus Cordless Handheld Vacuum Cleaner 2 in 1",
+    price: " ₹ 18131.97",
+   price1: "₹23650.64",
+   off:"23% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-16/PS3000-64GB-Gaming-Stick-10000--Games-426226-0._w280_p1_.jpg",
+    name: "PS3000 64GB 4K Retro Game Stick with 2 Wireless Gamepads",
+    price: "₹ 3941.12",
+    price1:"₹4729.50",
+    off:"17% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-07-21/walkingpad-treadmill-r1-smart-folding-walking-and-running-machine-1595324388511._w280_p1_.jpg",
+    name: "KingSmith WalkingPad R1 Pro Treadmill 2 in 1 Smart Folding",
+    price: "₹ 39418.26",
+   price1: "₹63069.69 ",
+   off:"39% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-05/A95X-DB-Android-9-0-S905X3-B-4GB-32GB-TV-BOX-426144-0._w280_p1_.jpg",
+    name: "AX95 DB Android 9.0 S905X3-B 4GB/32GB TV BOX 8K HDR 10+",
+    price:" ₹ 4650.66 ",
+    price1:"₹5517.88",
+    off:"16% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-09-05/Haylou-T16-Bluetooth-5-0-ANC-TWS-Earbuds-426142-0._w280_p1_.jpg",
+    name: "Haylou T16 Bluetooth 5.0 ANC TWS Earbuds 30H Battery Life",
+    price: " ₹ 5517.88 ",
+    price1: "",
+    off:"",
+   
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-17/ALLDOCUBE-iplay20-PRO-4G-LTE-Tablet-PC-10-1-426016-0._w280_p1_.jpg",
+    name: "ALLDOCUBE iPlay 20 Pro 4G LTE Tablet PC UNISOC SC9863A",
+    price: " ₹ 14978.45",
+    price1: "₹18920.36",
+    off:"21% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-12/Air-6-Pro-TWS-Earphones-425983-0._w280_p1_.jpg",
+    name: "Air 6 Pro TWS Earphones Charging Case with LED Display IPX4 Water",
+    price: " ₹ 1181.78",
+    price1: "",
+    off:"",
+   
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-06/xiaomi-air-lite-tws-earphones--1596681080473._w280_p1_.jpg",
+    name: "International Edition] Xiaomi Air Lite Earphones TWS ENC Noice",
+    price:"₹ 2758.55",
+   price1: "₹3152.74",
+   off:"13% OFF",
+  },
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-08-03/Car-Tyre-Pump-12V-150PSI-Rechargeable---Black-425899-0._w280_p1_.jpg",
+    name: "Cordless Tire Inflator Portable Compressor Digital Car Tire Pump",
+    price:"₹ 3152.74",
+   price1:"₹3704.60",
+   off:"15% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-07-29/JIMMY-JV85-Pro-Wireless-Vacuum-Cleaner-Purple-425873-0._w280_p1_.jpg",
+    name: "JIMMY JV85 Pro Cordless Handheld Flexible Vacuum Cleaner",
+    price:"₹ 21285.50",
+    price1:"₹31534.45 ",
+    off:"33% OFF",
+  },
+  
+  {
+    image_url:
+    "https://img.gkbcdn.com/p/2020-04-14/xiaomi-redmi-airdots-s-bluetooth5-0-tws-earbuds-realtek-rtl8763vxp--1586865937888._w280_p1_.jpg",
+    name: "Xiaomi Redmi AirDots 2 TWS Earbuds Bluetooth5.0 DSP Noise",
+    price: "₹ 1970.16",
+    price1:"₹2364.35",
+    off:"17% OFF",
+  },
+    
+    ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Data3 = [
+{
+    image_url:
+    "https://img.gkbcdn.com/p/2019-12-25/TicPods-2-Pro-AI-TWS-Wireless-Smart-Headphone-Blue-888800-._w280_.jpg",
+    name: "TicPods 2 Pro AI Qualcomm QCC5121 Earbuds ENC Posture",
+    price:"₹ 7883.02",
+    price1:"₹11035.76 ",
+   
+  },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-11-26/PaMu-Slide-mini-TWS-Bluetooth5-0-Noising-reduction-Earbuds-889639-._w280_.jpg",
+        name: "PaMu Slide Mini Qualcomm QCC3020 TWS Earbuds Wireless",
+        price:"₹ 6858.13",
+        price1: "",
+      },
+
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2019-05-23/minix-neo-c-ssd-usb-c-hub-with-240g-ssd-space-gray-1571991105074._w280_.jpg",
+        
+        name: "MINIX NEO S2 SSD USB-C Multiport Storage HUB",
+        price: "₹ 6779.29",
+        price1: "₹8671.40",
+       
+      },
+
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-04-22/sabbat-e12-bluetooth-5-0-tws-earphone-gunmetal-1587519936946._w280_.jpg",
+        
+        name: "Sabbat E12 Ultra Qualcomm QCC3020 CVC8.0 TWS Earbuds ",
+        price:"₹ 3941.12",
+        price1: "₹5202.53",
+  
+      },
+
+      {
+        image_url:
+        "https://img.gkbcdn.com/p/2020-08-12/Air-6-TWS-Earphones-425984-0._w280_.jpg",
+          
+        name: " Air 6 TWS Earphones IPX4 Water Resistant Auto Connect ",
+        price: "₹ 787.59 ",
+        price1: "₹1397.01",
+       
+      },
+    
+
+]
+
+
+  
+    Data.map(function (elem) {
+      var box = document.createElement("div");
+      box.className="box"
+  
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.className="img"
+  
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.className="name"
+  
+      var price = document.createElement("p");
+      price.innerText = elem.price;
+      price.className="price";
+
+      var price1 = document.createElement("p");
+      price1.innerText = elem.price1;
+      price1.className="price1"
+
+      var off = document.createElement("p");
+     off.innerText = elem.off;
+      off.className="off"
+
+      box.append(img, name, price,price1,off);
+  
+      document.querySelector("#container").append(box);
+    });
+    Data2.map(function (elem) {
+      var box = document.createElement("div");
+      box.className="box"
+  
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.className="img"
+  
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.className="name"
+  
+      var price = document.createElement("p");
+      price.innerText = elem.price;
+      price.className="price";
+
+      var price1 = document.createElement("p");
+      price1.innerText = elem.price1;
+      price1.className="price1"
+
+      var off = document.createElement("p");
+     off.innerText = elem.off;
+      off.className="off"
+
+      box.append(img, name, price,price1,off);
+  
+      document.querySelector("#container2").append(box);
+    });
+
+    Data3.map(function (elem) {
+      var box = document.createElement("div");
+      box.className="box"
+  
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.className="img"
+  
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.className="name"
+  
+      var price = document.createElement("p");
+      price.innerText = elem.price;
+      price.className="price";
+
+      var price1 = document.createElement("p");
+      price1.innerText = elem.price1;
+      price1.className="price1"
+
+    
+
+      box.append(img, name, price,price1);
+  
+      document.querySelector("#container3").append(box);
+    });
+    
+  </script>
