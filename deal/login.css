@@ -1,0 +1,141 @@
+#top{
+    height:100px;
+    width:210px;
+    /* border:1px solid red; */
+    margin:auto;
+}
+#bottum{
+    height:640px;
+    weight:100%;
+    /* border:1px solid green; */
+    margin:auto;
+    margin-top:15px;
+    margin-bottom:80px;
+}
+img{
+    height:100%;
+    width:100%;
+} 
+
+#Signuppage {
+   /* border:1px solid red; */
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   background-color:white;
+   height:450px; 
+   width:400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top:30px;
+}
+#divtext{
+    display:flex;
+    justify-content:space-around;
+    margin-top:7px;
+    margin-left:-30px;
+    margin-right:-30px;   
+}
+#divtext1{
+    margin-left:33px;
+    
+    font-size:20px;
+}
+#form{
+    text-align:center;
+}
+#checkbox{
+    /* margin-left:10px;   */
+    
+    margin-bottom:-10px;
+}
+#checkbox1{
+   margin-left:-65px;
+   margin-bottom:-10px;
+}
+#label{
+    font-size:14px;
+}
+#btn{
+    background-color:#fdb103;
+    border:none;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+    height:40px; 
+    width:330px;
+    margin-top:-5px;
+}
+#btn1{
+    background-color:#f0f0f0;
+    border:none;
+    color:#66686e;
+    font-weight:bold;
+    font-size:15px;
+    height:40px; 
+    width:330px; 
+    border:1px solid #e2e2e2;
+     
+}
+#btn1 a{
+    text-decoration:none;
+    color:#66686e;
+}
+p{
+    text-align:center;
+    /* margin-top:70px; */
+}
+p a{
+    text-decoration:none;
+}
+#checkbox a{
+    /* text-decoration:none; */
+    color:grey;
+}
+#checkbox1 a{
+    /* text-decoration:underline; */
+    color:grey;
+
+}
+.common{
+    height:40px;
+    width:310px;
+    padding-left:15px;
+}
+#googlelogo{
+    height:40px;
+    width:40px;
+    margin:auto;   
+}
+#googlelogo:hover{
+    transform: translateY(-10px);
+   
+}
+#btncaptcha{
+    border:1px solid grey;
+    height:45px;
+    width:140px;
+    background-color:white;
+    
+    margin-left:5px;
+    font-size:30px; 
+    font-weight:bold; 
+    font-style:italic;  
+    
+}
+#access{
+    height:40px; 
+    width:165px; 
+    padding-left:15px;
+    margin-left:-140px; "
+}
+
+#accessbtn{
+    /* border:1px solid red; */
+    display:flex;
+    /* justify-content:space-between; */
+    margin-left:140px;
+    margin-bottom:-10px;
+    justify-content:center;
+
+}

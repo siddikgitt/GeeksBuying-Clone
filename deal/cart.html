@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        #top{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+
+
+            
+        }
+        #top>div{
+            height: 130px;
+            
+        
+        }
+        #top>div>a>img{
+            height: 100px;
+            width: auto;
+            padding-left: 40px;
+
+        }
+        .states>h1{
+            color: blue;
+            padding-left: 200px;
+            padding-top: 20px;
+
+        }
+        .atm{
+            text-align: center;
+        }
+        .indian>img{
+            height: 50px;
+            width: 60px;
+            border-radius: 20px;
+
+
+        }
+        #product>div>h2{
+            color: blue;
+            margin-left: 120px;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            border-radius: 5px;
+            color: red;
+
+        }
+        #paybox{
+            height: 130px;
+            gap: 5px;
+
+            width: 80%;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 130px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+
+        }
+        #checkout
+        {
+            background-color: brown;
+            height: 50px;
+            width: 300px;
+            margin-top: 39px;
+            color: aliceblue;
+            border: 0px;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 20px;
+
+
+
+        }
+        #checkout>a{
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        
+        #offerbuy{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            width: 90%;
+            gap: 3px;
+            margin: auto;
+
+        }
+        #offerbuy>div>img{
+            height: 190px;
+            width: 190px;
+
+        }
+        #text>h1{
+            
+            padding-left: 140px;
+            padding-top: 50px;
+            padding-bottom: 8px;
+            color: brown;
+
+        }
+        #paypal{
+            background-color: rgb(255, 255, 255);
+            margin-top: 38px;
+            border: 0ch;
+
+        }
+        #continueshopping>a>h4{
+            margin-top: 24%;
+            font-size: 20px;
+            margin-left: 8px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #offerbuy>div>button{
+            background-color: blue;
+            border: 0ch;
+            width: 170px;
+            height: 50px;
+            margin-bottom: 50px;
+            color: aliceblue;
+            border-radius: 10px;
+
+
+
+
+
+        }
+        tbody{
+            background-color: aliceblue;
+            text-align: center;
+            border-radius: 55px;
+            border-collapse: collapse;
+            
+        }
+        tbody>img{
+            height: 90px;
+            width: 80px;
+
+        }
+        #paid>h3{
+            text-align: center;
+            color: coral;
+            padding-top: 28px;
+
+
+        }
+        #total{
+            padding-top: 47px;
+            color: blue;
+            font-size: 24px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+
+      
+            
+       
+            
+    
+        
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div>
+            <a href="home.html"><img src="https://www.shareasale.com/images/logo2016_1.jpg" alt=""></a>
+        </div>
+        <div class="states">
+            <h1>O-------------O------------O</h1>
+           
+
+        </div>
+      
+
+
+    </div>
+    <div id="product">
+        <div>
+            <h2>Product Name & Detail</h2>
+
+
+        </div>
+
+       
+
+
+
+
+
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Product Name & Detail
+
+                </th>
+                <th>
+                    Unit Price
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Total
+                </th>
+                <th>
+                    Operation
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div id="paybox">
+        <div id="continueshopping">
+            <a href="index.html"> <h4>Continue Shopping > </h4></a>
+        </div>
+        <div id="paid">
+            <h3>Total Paid Amount :-</h3>
+        </div>
+        <div  id="total"></div>
+        <div >
+            <button id="paypal">
+             <a href="paypal.html">  <img src="https://content1.geekbuying.com/V1.4/en/images/cartImg/new_pp.png" alt=""></a>
+            </button>
+        </div>
+        <div>
+            <button id="checkout">
+                <a href="paytm.html">Proceed to checkout</a>
+            </button>
+        </div>
+
+
+    </div>
+    <div class="atm">
+        Payment Methods: <img src="https://content1.geekbuying.com/V1.4/en/images/shopcart_payimg.jpg" alt="">
+
+    </div>
+    <div id="text">
+        <h1>More Relevant Items to Consider</h1>
+    </div>
+    <div id="offerbuy">
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </div>
+    <div class="atm">
+        <img src="https://content1.geekbuying.com/V1.4/en/images/shopcart_footicon.jpg" alt="">
+        <p>© 2012-2022 Geekbuying.com. All rights reserved. </p>
+    </div>
+    <div id="put"></div>
+    
+</body>
+</html>
+<tbody>
+
+</tbody>
+<script>
+    var mensData = [
+ 
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-EX4272/reebok_EX4272_1.jpg.plp",
+      name: "MEN'S REEBOK RUNNING QUICK DRIFTER SHOES",
+      price: 1620,
+      strikedoffprice: 3599,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-H02293/reebok_H02293_1.jpg.plp",
+      name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+      price: 7599,
+      strikedoffprice: 9999,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-FV9551/MEN_SWIM_SLIPPERS_FV9551_1.jpg.plp",
+      name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+      price: 909,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://img.gkbcdn.com/p/2020-08-03/Xiaomi-Redmi-9A-6-53--MTK-Helio-G25-Smartphone-4GB-64GB-Blue-425886-0._w280_.jpg",
+      name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+      price: 779,
+      strikedoffprice: 1299,
+    },
+    {
+      image_url:
+        "https://img.gkbcdn.com/p/2021-07-05/Hi96-V3-Android-9-0-Hi3798M-V310-1GB-8GB-TV-BOX-461096-0._w280_.jpg",
+      name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+      price: 1749,
+      strikedoffprice: 2499,
+    },
+    {
+      image_url:
+        "https://img.gkbcdn.com/p/2022-03-04/a95x-f3-air-ii-tv-box-4gb-ram-32gb-rom-2dc88e-1646360096492._w280_.gif",
+      name: "MEN'S REEBOK FITNESS TRAINING  SWEATSHIRT",
+      price: 1079,
+      strikedoffprice: 1799,
+    },
+  ];
+  var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+    mensData.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+
+    var name = document.createElement("p");
+    name.textContent = elem.name;
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+
+    var btn = document.createElement("button");
+    
+    btn.innerText = "Add to Cart";
+    btn.addEventListener("click", function () {
+    addToCart(elem);
+    });
+
+    box.append(img, name, price,btn);
+
+    document.querySelector("#offerbuy").append(box);
+    });  
+    function addToCart(elem) {
+      console.log(elem);
+      cartData.push(elem);
+      localStorage.setItem("cart", JSON.stringify(cartData));
+      alert("item added to cart");
+      window.location.reload();
+    }
+   // var contNo=JSON.parse(localStorage.getItem("cart"));
+    //console.log(contNo);
+   // var acha=JSON.parse(localStorage.getItem("acha")) || []
+    //contNo.map(function(elem){
+    // console.log(elem);
+   // contNo.map(function(elem){
+
+    
+      
+    //   var tr=document.createElement("tr");
+    //   var td1=document.createElement("td");
+    //   td1.innerText=elem.name;
+    //   var td2=document.createElement("td");
+    //   td2.innerText=elem.mobile;
+    //   var td3=document.createElement("td");
+    //   td3.innerText=elem.type;
+    //   var td4=document.createElement("td");
+    //   td4.textContent="Favourites"
+    //   td4.style.color="blue"
+    //   td4.style.cursor="pointer"
+    //   td4.addEventListener("click",function(){
+    //     markCompleteFunction(elem);
+    //   });
+    //     tr.append(td1);
+    //     document.querySelector("tbody").append(tr);
+    // })
+      
+    //  // function markCompleteFunction(elem){
+    //    // acha.push(elem);
+    //     //localStorage.setItem("mst",JSON.stringify(acha))
+   // }
+//    document.querySelector("#offerbuy").addEventListener("submit",addToCart)
+//    function addToCart(){
+//        event.preventDefault();
+//        var tr =document.createElement("tr");
+//        var t1=elem.name;
+//        var t2=elem.price;
+//        tr.append(t1,t2);
+//        document.querySelector("tbody").append(tr);
+
+//    }
+
+var cartData = JSON.parse(localStorage.getItem("cart"));
+  console.log(cartData);
+
+  var total = cartData.reduce(function (sum, elem, index, arr) {
+    return sum + Number(elem.price);
+    
+  },0);
+
+  var length = cartData.length;
+  console.log(length);
+
+  console.log(total);
+  document.querySelector("#total").innerText=total
+  // total is Rs 16365
+  //`` - template literals
+  //document.querySelector(
+   // "p"
+ // ).innerText = ` you have ${length} items in cart and  total is Rs ${total}`;
+
+  cartData.map(function (elem, index) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    
+    
+    img.src = elem.image_url;
+
+    var name = document.createElement("p");
+    name.textContent = elem.name;
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+
+    var btn = document.createElement("button");
+    btn.innerText = "Remove";
+    btn.addEventListener("click", function () {
+      removeItem(elem, index);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("tbody").append(box);
+  });
+
+  function removeItem(elem, index) {
+    console.log(elem, index);
+    cartData.splice(index, 1);
+    console.log(cartData);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    window.location.reload();
+  }
+
+  //    var arr =[1,2,3,4]
+  //    console.log(arr.splice(0,1)) // []
+
+</script>
+
+

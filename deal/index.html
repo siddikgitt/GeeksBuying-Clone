@@ -6,6 +6,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deals</title>
     <style>
+      body{
+    background-image: ("https://promotion.geekbuying.com/promotion/march_mega_sale");
+}
+.main{
+    width: 70%;
+    margin: auto;
+}
+select,input,button{
+    border: 0;
+    background: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.navbar{
+    height: 125px;
+    width: 100%;
+    padding-left: 40px;
+}
+
+
+
+
+.one{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 40px;
+
+}
+.one>div{
+    margin-left: 50px;
+}
+.one>div>button{
+    position: relative;
+}
+.down{
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    min-height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.ourapp:hover .down{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down1{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    min-height: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.language:hover .down1{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down2{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    min-height: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.NRI:hover .down2{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+}
+.down3{
+    display: none;
+    position: absolute;
+    min-width: 80px;
+    min-height: 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.spport:hover .down3{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    background-color: white;
+}
+.ourimg1{
+    height: 200px;
+    width: 250px;
+    padding-right: 25px;
+}
+.ourimg img{
+    width: 100%;
+}
+.ourimg{
+    height: 100px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "a b b"
+    "a c c"
+}
+.ourimg>div:nth-child(1){
+    grid-area: a;
+    height: 100px;
+    width: 100px;
+}
+.ourimg>div:nth-child(2){
+    grid-area: b;
+}
+.ourimg>div:nth-child(3){
+    grid-area: c;
+}
+.nri1{
+    height: 200px;
+    width: 250px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+.nri1>select{
+    border: 1px solid;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.nri1>button{
+    margin-left: 200px;
+    background-color: orange;
+    height: 20px;
+    width: 50px;
+}
+
+
+
+
+
+.two{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.two>img{
+    height: 60px;
+    cursor: pointer;
+}
+.two1{
+    height: 30px;
+    width: 500px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: flex;
+}
+.two1>input{
+    width: 400px;
+}
+.allcategories{
+    height: 30px;
+    width: 100px;
+    margin-top: 5px;
+}
+.allcategories+label{
+    margin-top: 5px;
+}
+.two1>button{
+    height: 30px;
+    width: 50px;
+    background-color: #3199ce;
+    cursor: pointer;
+}
+.two1>button>img{
+    height: 25px;
+}
+.two2{
+    display: flex;
+   
+}
+.two2>div{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.two2>div>img{
+    height: 30px;
+    margin-bottom: 16px;
+}
+.two2>div>div{
+    margin-left: 20px;
+    height: 50px;
+}
+.two2>div>div>p{
+    margin: 0;
+}
+.signin{
+    display: none;
+    position: absolute;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.signin1:hover .signin{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+    background-color: white;
+    transform: translateY(300px);
+}
+.signin>li>div>button{
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    margin-top: 10px;
+}
+.signin>li>div{
+    text-align: center;
+}
+
+
+#cartcount{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+}
+.three{
+    display: flex;
+    font-weight: bold;
+}
+.three>div,select{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
         .FLASHDEALS>h1{
             text-align: center;
             font-size: 36px;
@@ -13,7 +274,7 @@
             display: block;
             line-height: 48px;
             font-family: "Open Sans",sans-serif;
-            padding-top: 80px;
+            padding-top: 10px;
            
             
 
@@ -26,11 +287,6 @@
             grid-template-columns: repeat(8,1fr);
             gap: 10px;
         }
-        
-        
-
-            
-        
         .box>div>p{
             text-align: center;
             font-size: large;
@@ -41,15 +297,10 @@
             width: 70px;
             margin-left: 54px;
             border-radius: 60px;
-
-           
-            
-            image-orientation: flip;
+           image-orientation: flip;
             
             cursor: pointer;
-            
-            
-            
+ 
 
         }
         .box>div>a>p{
@@ -77,10 +328,7 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
-            
-           
-
-
+ 
             
         }
         #watch>div{
@@ -92,11 +340,7 @@
             margin-top: 50px;
             margin-left: 35px;
             border-radius: 8px;
-
-
-
-
-            
+ 
 
         }
         #watch>div>p{
@@ -140,6 +384,7 @@
             
             
         }
+        
       
       
 
@@ -241,6 +486,40 @@
             text-align: center;
             color: #D81414;
         }
+        #saveBIG{
+          background-color: #f3f2f2;
+          color: black;
+        }
+        #language{
+          background-color: #f3f2f2;
+          color: black;
+
+
+        }
+        #ship{
+          background-color: #f3f2f2;
+          color: black;
+        }
+        #spport{
+          background-color: #f3f2f2;
+          color: black;
+          
+
+
+        }
+        #cart>a>img{
+          height: 60px;
+          width: 60px;
+
+        }
+        .signin1>a>img{
+          height: 40px;
+          width: 40px;
+          
+        }
+
+        
+
         
 
 
@@ -261,6 +540,161 @@
     </style>
 </head>
 <body>
+  <div id="searchbox">
+   
+    <div class="main">
+        <div class="navbar">
+            <div class="one">
+                <div class="ourapp" >
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/128/7177/7177341.png" alt="mobile phone "> -->
+                    <button id="saveBIG">Save BIG with our app!</button>
+                    <ul class="down">
+                        <li><a href="#"><samp>
+                            <div class="ourimg1">
+                                <p>Get exclusive app deals and discounts, download our app & SAVE</p>
+                                <div class="ourimg">
+                                    <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/android_app.png" alt="urcod"></div>
+                                    <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/app_store.jpg" alt="app_store"></div>
+                                    <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/google_play.jpg" alt="google_play"></div>
+                                </div>
+                                <p>Go mobile site</p>
+                            </div>
+                        </samp></a></li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <button id="language">language</button>
+                    <ul class="down1">
+                        <li><a href="#">Konkani</a></li>
+                        <li><a href="#">Maithili</a></li>
+                        <li><a href="#">Marathi</a></li>
+                        <li><a href="#">Nepali</a></li>
+                    </ul>
+                </div>
+                <div class="NRI">
+                    <button id="ship">Ship to <samp><img src="" alt=""></samp> /NRI</button>
+                    <ul class="down2">
+                        <li><a href="#">
+                            <div class="nri1">
+                                <p>Select Regional Settings</p><br>
+                                <label>Ship to</label><br>
+                                <select id="NRI">
+                                    <option value="india"><samp><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="india"></samp>India</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select><br>
+                                <label>Currency</label><br>
+                                <select id="Currency">
+                                    <option value="rupee">INR ₹</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select><br>
+                                <button id="save">Save</button>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="spport">
+                    <button id="spport">spport center</button>
+                    <ul class="down3">
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Ticket</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="two">
+                <img src="https://www.shareasale.com/images/logo2016_1.jpg" alt="logo">
+                <div class="two1">
+                    <div class="allcategories">
+                        <select name="all categories" id="allcategories">
+                            <option value="">all categories</option>
+                            <option value="Smart Home Garden">Smart Home & Garden</option>
+                            <option value="Phones & Accessories">Phones & Accessories</option>
+                            <option value="Computers, Tablets & Accessories">Computers, Tablets & Accessories</option>
+                            <option value="Wearable Devices">Wearable Devices</option>
+                        </select>
+                    </div>
+                    <label >|</label>
+                    <input type="text" id="searchinput" value="" placeholder="search by keywordo">
+                    <button id="search">
+                        <img src="https://cdn.vectorstock.com/i/1000x1000/18/12/search-icon-white-on-the-blue-background-vector-3451812.webp" alt="search">
+                    </button>   
+                </div>
+                <div class="two2">
+                    <div class="signin1">
+                        <a href="signup.html"><img src="https://cdn-icons-png.flaticon.com/128/747/747376.png" alt="sign in"></a>
+                        <p>Sign in</p>
+                        <ul class="signin">
+                            <li>
+                                <div>
+                                    <p>Welcome to Geekbuying</p><br>
+                                    <button id="signin"><a href="signup.html">Sign in</a></button><br>
+                                    <button id="createaccount"><a href="signup.html">create a new account</a></button>
+                                    <p>or</p>
+                                    <div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/36px-Google_%22G%22_Logo.svg.png?20210618182606" alt="google icon">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="wishlist">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="wishlist">
+                        <p>Wishlist</p>
+                    </div>
+                    <div id="cart">
+                        <a href="cart.html"><img src="https://i.pinimg.com/236x/2d/96/4a/2d964a6bf37d9224d0615dc85fccdd62--shopping-cart-logo-info-graphics.jpg" alt="Cart"></a>
+                        <div>
+                             <div id="cartcount"></div>
+                            <a href="cart.html">Cart</a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <select name="all categories" id="allcategories">
+                    <option value="">shop all categories</option>
+                    <option value="Localwarehouses">Local Warehouses</option>
+                    <option value="Smarthome&garden">Smart Home & Garden</option>
+                    <option value="Sports&outdoors">Sports & Outdoors</option>
+                    <option value="Consumerelectronics">Consumer Electronics</option>
+                </select>
+                <div id="new">New</div>
+                <div id="topseller">Top Seller</div>
+                <div id="live"><a href="live.html">Live</a></div>
+                <div id="brand">Brand</div>
+                <div id="clearance">Clearance</div>
+                <div id="deals">Deals</div>
+                <div id="bargain">Bargain</div>
+                <div id="coupon">Coupon</div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
     <div class="FLASHDEALS">
         <h1> FLASH DEALS</h1>
         <div class="box">
@@ -412,7 +846,7 @@
                     <p>Privacy</p>
                     <p>Declaration</p>
                     <p>Customs</p>
-                    <p>Ajeet Singh</p>
+                    <a href="ajeet.html"><p>Ajeet Singh</p></a>
                 </div>
 
             </div>
