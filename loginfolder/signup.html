@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="login.css" />
 
 </head>
@@ -19,7 +19,7 @@
       <div id="Signuppage">
           <div id="divtext">
               <h3>Create your account</h3>
-              <p>Sign In</p>
+              <p><a href="login.html">Sign In</a></p>
           </div>
 
           <form id="form">
@@ -27,11 +27,16 @@
 
             <input id="email" class="common" type="email" placeholder="Email Address" size="40"/><br><br>
 
-            <input id="pass" class="common" type="password" placeholder="Password" size="40" /><br><br>
+            <input id="pass" class="common" type="password" placeholder="Password" size="10" /><br><br>
 
-            <input id="access" type=""text placeholder="Access code" size="4" style="height:40px; width:170px; padding-left:15px;"/> 
+          <div id="accessbtn">
+            <input id="access" type=""text placeholder="Access code" size="4" /> 
 
-            <input id="captcha" type="text" style="height:40px; width:115px; padding-left:15px;"/><br><br>
+            <button id="btncaptcha" >DYCJ</button>
+            
+          </div><br><br>
+
+            <!-- <button id="captcha" type="text" style="height:40px; width:115px; margin-left:12px; margin-top:5px;"></button> -->
 
             <div id="checkbox">
                 <input type="checkbox"/>
@@ -63,11 +68,23 @@
             password:document.querySelector("#pass").value,
             accesscode:document.querySelector("#access").value,
         };
-       //console.log(userObj);
+
+        for(var key in userObj){
+            //console.log(key,userObj[key]);
+            if(userObj[key]==""){
+                //console.log("invalid");
+                alert("Invalid Credential, Try Again");
+                break;
+            }
+            else{
+                alert("Registraion Successfull");
+                window.location.href="login.html";
+                break;
+            }
+        }
        userData.push(userObj);
-       //console.log(userData);
        localStorage.setItem("geeksign",JSON.stringify(userData))
-       //console.log(userData);
+       
     };
 
 </script>
