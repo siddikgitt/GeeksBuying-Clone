@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #letters{
+            display: grid;
+            grid-template-columns: repeat(28, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 15px;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+        #brandLetterImg{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto;
+            gap: 15px;
+            margin-top: 40px;
+        }
+    
+        #boxImgID{
+            border: 0.2px solid gray;
+            width: 140px;  
+            height: 70px;
+        }
+
+        #fBDivBox{
+            width: 484px;  
+            height: 320px;
+        }
+
+        #letterDiv:hover{
+            color: blue;
+        }
+
+        #featuredBrands{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 25px;
+        }
+        #iconTagID{
+            width: 24px;
+            height: 24px;
+        }
+        span{
+            /* height: 22px; */
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        #ABimgBoxID{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: auto;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        #innerImg{
+            width: 120px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body style="width: 80%; margin: auto;">
+    <div id="letters"></div>
+
+    <div id="brandLetterImg"></div>
+
+    <h1 style="text-align: center; font-family: sans-serif;">Featured Brands</h1>
+    <div id="featuredBrands"></div>
+
+    <h1 style="text-align: center; font-family: sans-serif;">All Brands</h1>
+    <div id="allBrands"></div>
+</body>
+</html>
+
+<script>
+
+    var letter = [
+        {
+            ch: "Hot",
+            img: [ "https://img.gkbcdn.com/s3/b/Logo/roborock.jpg",
+                    "https://img.gkbcdn.com/s3/b/Logo/Viomi.jpg",
+                    "https://img.gkbcdn.com/s3/b/eleglide.jpg",
+                    "https://img.gkbcdn.com/s3/b/2006/fiido.jpg?v=-674318602",
+                    "https://img.gkbcdn.com/s3/b/Logo/tronsmart.jpg?v=788944783",
+                    "https://img.gkbcdn.com/s3/b/Logo/one-netbook.jpg",
+                    "https://img.gkbcdn.com/s3/b/ado.jpg",
+                    "https://img.gkbcdn.com/s3/b/Logo/himo.jpg?v=1500289693",
+                    "https://img.gkbcdn.com/s3/b/Logo/jimmy.jpg?v=-219567574",
+                    "https://img.gkbcdn.com/s3/b/artillery.jpg",
+                    "https://img.gkbcdn.com/s3/b/proscenic-6HykTHuh.jpg",
+                    "https://img.gkbcdn.com/s3/b/bezior.jpg",
+                    "https://img.gkbcdn.com/s3/b/engwe.jpg",
+                    "https://img.gkbcdn.com/s3/b/kugookirin.jpg"
+                ],
+        },
+        {
+            ch: "A",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/amazfit.jpg",
+                "https://img.gkbcdn.com/s3/b/ado.jpg",
+                "https://img.gkbcdn.com/s3/b/artillery.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/alldocube.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/ajazz.jpg",
+                "https://img.gkbcdn.com/s3/b/acgam.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/apple.jpg",
+                "https://img.gkbcdn.com/s3/b/2007/acton.jpg?v=-488455984",
+                "https://img.gkbcdn.com/s3/b/Logo/Aqara.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/AOSIMAN.jpg",
+                "https://img.gkbcdn.com/s3/b/anbernic.jpg",
+                "https://img.gkbcdn.com/s3/b/anycubic.jpg",
+                "https://img.gkbcdn.com/s3/b/atmoko-65qY1x19.jpg",
+                "https://img.gkbcdn.com/s3/b/acclamator-67mBndAU.jpg",
+            ],
+        },
+        {
+            ch: "B",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/beelink.jpg",
+                "https://img.gkbcdn.com/s3/b/bezior.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/bluedio.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/baseus.jpg",
+                "https://img.gkbcdn.com/s3/b/bear.jpg",
+                "https://img.gkbcdn.com/s3/b/bluetti.jpg",
+                "https://img.gkbcdn.com/s3/b/bago.jpg",
+                "https://img.gkbcdn.com/s3/b/bomaker-6GkqMypQ.jpg"
+            ],
+        },
+        {
+            ch: "C",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/chuwi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/cubot.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/cenava.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/cheerson.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Cleanfly.jpg",
+                "https://img.gkbcdn.com/s3/b/creality-3d.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/CMACEWHEEL.jpg",
+                "https://img.gkbcdn.com/s3/b/compact.jpg",
+                "https://img.gkbcdn.com/s3/b/cycplus.jpg",
+                "https://img.gkbcdn.com/s3/b/ctc-6DPEhfxd.jpg",
+
+            ],
+        },
+        {
+            ch: "D",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/dji.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/dobe.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/DDPAI.jpg",
+                "https://img.gkbcdn.com/s3/b/2002/dreame.jpg",
+                "https://img.gkbcdn.com/s3/b/2005/dyu.jpg?v=-1498692435",
+                "https://img.gkbcdn.com/s3/b/2007/deerma.jpg?v=2077770434",
+                "https://img.gkbcdn.com/s3/b/docrooup.jpg",
+            ],
+        },
+        {
+            ch: "E",
+            img: [
+                "https://img.gkbcdn.com/s3/b/eleglide.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/elephone.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/emax.jpg",
+                "https://img.gkbcdn.com/s3/b/engwe.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/ESTRELLA.jpg",
+                "https://img.gkbcdn.com/s3/b/2009/ecoflow.jpg",
+                "https://img.gkbcdn.com/s3/b/eureka.jpg",
+                "https://img.gkbcdn.com/s3/b/earykong-6GkqHJGO.jpg",
+                "https://img.gkbcdn.com/s3/b/elegoo-6GkqNOSU.jpg",
+                "https://img.gkbcdn.com/s3/b/eryone-6LgBqG93.png",
+            ],
+        },
+        {
+            ch: "F",
+            img: [
+                "https://img.gkbcdn.com/s3/b/2006/fiido.jpg?v=-674318602",
+                "https://img.gkbcdn.com/s3/b/Logo/feiyu.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/funry.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/flytec.jpg",
+                "https://img.gkbcdn.com/s3/b/flsun.png",
+                "https://img.gkbcdn.com/s3/b/Logo/fimi.jpg?v=594574638",
+                "https://img.gkbcdn.com/s3/b/Logo/FlyNova.jpg",
+                "https://img.gkbcdn.com/s3/b/fafrees.jpg",
+                "https://img.gkbcdn.com/s3/b/flashforge.jpg",
+                "https://img.gkbcdn.com/s3/b/flashfish-6DPuf6vS.jpg",
+                "https://img.gkbcdn.com/s3/b/fifish-6ILkKPap.jpg",
+            ]
+        },
+        {
+            ch: "G",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/geekbes.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/gpd.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/geprc.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/gamesir.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/gtmedia.jpg",
+                "https://img.gkbcdn.com/s3/b/gotdya.jpg",
+                "https://img.gkbcdn.com/s3/b/gmk.jpg",
+                "https://img.gkbcdn.com/s3/b/gofort-6DPuSaj7.jpg",
+                "https://img.gkbcdn.com/s3/b/geeetech-6SNQ8KjW.jpg",
+            ]
+        },
+        {
+            ch: "H",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/huawei.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/himo.jpg?v=1500289693",
+                "https://img.gkbcdn.com/s3/b/Logo/hubsan.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/hat-prince.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/h96.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/happymodel.jpg",
+                "https://img.gkbcdn.com/s3/b/happyrun.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Haylou.jpg",
+                "https://img.gkbcdn.com/s3/b/haniwinner.jpg",
+                "https://img.gkbcdn.com/s3/b/homasy-68pmVddu.jpg",
+            ]
+        },
+        {
+            ch: "I",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/ipazzport.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/ipega.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/iflight.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Imortor.jpg",
+                "https://img.gkbcdn.com/s3/b/intco.jpg",
+                "https://img.gkbcdn.com/s3/b/imou-661N8iEz.jpg",
+                "https://img.gkbcdn.com/s3/b/inse-6ILfjShE.jpg",
+            ]
+        },
+        {
+            ch: "J",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/jimmy.jpg?v=-219567574",
+                "https://img.gkbcdn.com/s3/b/Logo/jjrc.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/jdrc.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/JBL.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/jvmac.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/JIUXUN.jpg",
+                "https://img.gkbcdn.com/s3/b/joyor.jpg"
+            ],
+        },
+        {
+            ch: "K",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/kingston.jpg",
+                "https://img.gkbcdn.com/s3/b/kugookirin.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/kz.jpg",
+                "https://img.gkbcdn.com/s3/b/2009/kingsmith.jpg",
+                "https://img.gkbcdn.com/s3/b/kuu.jpg",
+                "https://img.gkbcdn.com/s3/b/kaiweets.jpg",
+                "https://img.gkbcdn.com/s3/b/kingboss-67QshkqD.jpg",
+                "https://img.gkbcdn.com/s3/b/kywoo3d-68pKaDCQ.jpg"
+            ]
+        },
+        {
+            ch: "L",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/logitech.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/lenovo.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Lamtwheel.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/LEXON.jpg",
+                "https://img.gkbcdn.com/s3/b/lensun.jpg",
+                "https://img.gkbcdn.com/s3/b/lankeleisi.jpg",
+                "https://img.gkbcdn.com/s3/b/leadzm.jpg",
+                "https://img.gkbcdn.com/s3/b/laserpecker.jpg",
+                "https://img.gkbcdn.com/s3/b/longer-69tGeb7A.jpg",
+                "https://img.gkbcdn.com/s3/b/labists-6GkqNnBW.jpg",
+                "https://img.gkbcdn.com/s3/b/lokmat-6SNNtwWE.jpg",
+                "https://img.gkbcdn.com/s3/b/liectroux-6SNIx71X.jpg",
+            ]
+        },
+        {
+            ch: "M",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/mecool.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/makibes.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/minix.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/mjx.jpg",
+                "https://img.gkbcdn.com/s3/b/2003/mijia.jpg?v=501322930",
+                "https://img.gkbcdn.com/s3/b/Logo/magicsee.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Miaomiaoce.jpg",
+                "https://img.gkbcdn.com/s3/b/miyoo-6RKCdnQS.jpg",
+            ]
+        },
+        {
+            ch: "N",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/nillkin.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/netac.jpg",
+                "https://img.gkbcdn.com/s3/b/2009/nextool.jpg",
+                "https://img.gkbcdn.com/s3/b/niubility.jpg",
+                "https://img.gkbcdn.com/s3/b/nakxus.jpg",
+                "https://img.gkbcdn.com/s3/b/navee.jpg",
+                "https://img.gkbcdn.com/s3/b/navee.jpg"
+            ]
+        },
+        {
+            ch: "O",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/one-netbook.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/oneplus.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/orico.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/oukitel.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/ONEBOT.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Oclean.jpg",
+                "https://img.gkbcdn.com/s3/b/ortur.jpg",
+                "https://img.gkbcdn.com/s3/b/oupes-6GkqJg7D.jpg",
+            ]
+        },
+        {
+            ch: "P",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/philips.jpg",
+                "https://img.gkbcdn.com/s3/b/proscenic-6HykTHuh.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Pocophone.jpg",
+                "https://img.gkbcdn.com/s3/b/pictek-67mC0Aau.jpg",
+                "https://img.gkbcdn.com/s3/b/pawbby-6AlQBybG.jpg",
+            ]
+        },
+        {
+            ch: "Q",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/qcy.jpg",
+                "https://img.gkbcdn.com/s3/b/qidi.jpg",
+            ]
+        },
+        {
+            ch: "R",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/roborock.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/razer.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/rii.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Rock.jpg",
+                "https://img.gkbcdn.com/s3/b/2003/rich-bit.jpg?v=1133067071",
+                "https://img.gkbcdn.com/s3/b/Logo/Roidmi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Redmi.jpg",
+                "https://img.gkbcdn.com/s3/b/rogbid-6SNNjjz6.jpg",
+            ]
+        },
+        {
+            ch: "S",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/sjrc.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/stmagic.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/seagate.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/sonoff.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/sabbat.jpg",
+                "https://img.gkbcdn.com/s3/b/2005/samebike.jpg?v=2005900933",
+                "https://img.gkbcdn.com/s3/b/2007/segway-ninebot.jpg?v=-1662088573",
+            ]
+        },
+        {
+            ch: "T",
+            img: [
+                "https://img.gkbcdn.com/s3/b/2007/segway-ninebot.jpg?v=-1662088573",
+                "https://img.gkbcdn.com/s3/b/Logo/tanix.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/ticwatch.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/tronxy.jpg?v=95188421",
+                "https://img.gkbcdn.com/s3/b/two-trees-67PzRFvi.jpg",
+                "https://img.gkbcdn.com/s3/b/two-trees-67PzRFvi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Tycolit.jpg",
+            ]
+        },
+        {
+            ch: "U",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/Ugoos.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/UREVO.jpg",
+                "https://img.gkbcdn.com/s3/b/uwant-6HSWBuFK.jpg",
+            ]
+        },
+        {
+            ch: "V",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/Viomi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/vorke.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/vstarcam.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Vivibright.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Vivibright.jpg",
+            ]
+        },
+        {
+            ch: "W",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/wltoys.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/waveshare.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/wpl.jpg",
+                "https://img.gkbcdn.com/s3/b/2001/walkingpad.jpg?v=-1790082630",
+                "https://img.gkbcdn.com/s3/b/2001/walkingpad.jpg?v=-1790082630",
+                "https://img.gkbcdn.com/s3/b/--.jpg",
+            ]
+        },
+        {
+            ch: "X",
+            img: [
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/xk.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/xinlehong-toys.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/xiaomo.jpg",
+                "https://img.gkbcdn.com/s3/b/x-tron.jpg",
+                "https://img.gkbcdn.com/s3/b/xtool-6LgBNuS4.png",
+            ]
+        },
+        {
+            ch: "Y",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/yunmai.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/yeelight.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/youpin.jpg",
+                "https://img.gkbcdn.com/s3/b/yadea.jpg",
+                "https://img.gkbcdn.com/s3/b/yesoul.jpg",
+                "https://img.gkbcdn.com/s3/b/youpin-scooter.jpg",
+            ]
+        },
+        {
+            ch: "Z",
+            img: [
+                "https://img.gkbcdn.com/s3/b/youpin-scooter.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/ZD-Racing.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/zlrc.jpg",
+                "https://img.gkbcdn.com/s3/b/zonestar-6DPEHO3Y.jpg",
+                "https://img.gkbcdn.com/s3/b/zhengbu-6GkqMZh5.jpg",
+            ]
+        },
+        {
+            ch: "Other",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/3glasses.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/360.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/90FUN.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/17PIN.jpg",
+            ]
+        }    
+
+    ];
+
+    letter.map(function(el,index, arr){
+        var div_Letters = document.querySelector("#letters");
+
+        var makeDiv = document.createElement("div");
+        makeDiv.setAttribute("id","letterDiv");
+        makeDiv.style.cursor = "pointer";
+        makeDiv.addEventListener("click", function(){
+            showBrandwithLetter(el);
+        });
+
+        makeDiv.innerText = el.ch;
+
+        div_Letters.append(makeDiv);
+    });
+
+    function showBrandwithLetter(el){
+        document.querySelector("#brandLetterImg").innerHTML = "";
+        
+        for(var i=0; i<el.img.length; i++){
+            var box = document.createElement("div");
+            box.setAttribute("id", "boxImgID");
+
+            var img1 = document.createElement("img");
+            img1.src = el.img[i];
+            img1.style.width = "140px";
+            img1.style.height = "70px";
+            img1.style.border = "0.2px gray"
+
+            box.append(img1);
+
+            document.querySelector("#brandLetterImg").append(box);
+        }        
+    }
+
+    for(var i=0; i<letter[0].img.length; i++){
+        var box = document.createElement("div");
+        box.setAttribute("id", "boxImgID")
+
+        var img1 = document.createElement("img");
+        img1.src = letter[0].img[i];
+        img1.style.width = "140px";
+        img1.style.height = "70px";
+        img1.style.border = "0.2px gray"
+
+        box.append(img1);
+
+        document.querySelector("#brandLetterImg").append(box);
+    }  
+   
+    var featuredBrands = [
+        {
+            div: "div1",
+            img: [
+                "https://img.gkbcdn.com/s3/bb/roborock-20211111211035580.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/roborock.jpg",
+            ],
+            hover: [
+                "https://img.gkbcdn.com/p/2022-03-14/Roborock-Q7-Max-Robot-Vacuum-Cleaner-497779-0._w200_.jpg",
+                "https://img.gkbcdn.com/p/2021-03-01/roborock-s7-robot-vacuum-cleaner-2500pa-powerful-suction-1614568841892._w200_.jpg",
+                "https://img.gkbcdn.com/p/2021-11-11/Roborock-Dyad-Wet-and-Dry-Vacuum-Clenaer-13Kpa-5000mAh-35Mins-Run-Time-478096-1._w200_.jpg",
+            ],
+            hoverPrice: [
+                "₹31456",
+                "₹40995",
+                "₹30746"
+            ],
+            reviewLogo: "https://img.gkbcdn.com/s3/b/Logo/roborock.jpg",
+            reviewStar: "4.98/5.0",
+            reviewcount: "399",
+        },
+        {
+            div: "div2",
+            img: [
+                "https://img.gkbcdn.com/s3/bb/eleglide-20211111210459926.jpg",
+                "https://img.gkbcdn.com/s3/b/eleglide.jpg",
+            ],
+            hover: [
+                "https://img.gkbcdn.com/p/2021-09-10/eleglide-s1-plus-folding-electric-scooter-10--pneumatic-tires-black-1631275759377._w200_.jpg",
+                "https://img.gkbcdn.com/p/2021-09-10/eleglide-s1-plus-folding-electric-scooter-10--pneumatic-tires-black-1631275759377._w200_.jpg",
+                "https://img.gkbcdn.com/p/2022-02-07/eleglide-m1-electric-bike-7-5ah-250w-motor-mountant-bicycle-dark-blue-261884-1644200854655._w200_.jpg",
+            ],
+            hoverPrice: [
+                "₹31456",
+                "₹40995",
+                "₹30746"
+            ],
+            reviewLogo: "https://img.gkbcdn.com/s3/b/eleglide.jpg",
+            reviewStar: "5/5.0",
+            reviewcount: "84",
+        },
+        {
+            div: "div3",
+            img: [
+                "//img.gkbcdn.com/s3/bb/tronsmart-20210123120544453.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/tronsmart.jpg?v=788944783"
+            ],
+            hover: [
+                "https://img.gkbcdn.com/p/2022-02-17/Tronsmart-Bang-496690-0._w200_.jpg",
+                "https://img.gkbcdn.com/p/2019-07-05/tronsmart-element-force-portable-bluetooth-speaker-1571994482583._w200_.jpg",
+                "https://img.gkbcdn.com/p/2019-09-27/tronsmart-element-t6-mini-bluetooth-5-0-speaker---black-1571994805140._w200_.jpg",
+            ],
+            hoverPrice: [
+                "₹8671",
+                "₹3547",
+                "₹1575"
+            ],
+            reviewLogo: "https://img.gkbcdn.com/s3/b/Logo/tronsmart.jpg?v=788944783",
+            reviewStar: "4.93/5.0",
+            reviewcount: "6156",
+        },
+        {
+            div: "div4",
+            img: [
+                "//img.gkbcdn.com/s3/bb/ado-20211111211123105.jpg",
+                "//img.gkbcdn.com/s3/b/ado.jpg",
+            ]
+        },
+        {
+            div: "div5",
+            img: [
+                "//img.gkbcdn.com/s3/bb/jimmy-20200910094916929.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/jimmy.jpg?v=-219567574"
+            ]
+        },
+        {
+            div: "div6",
+            img: [
+                "//img.gkbcdn.com/s3/bb/bezior-20211111210912370.jpg",
+                "//img.gkbcdn.com/s3/b/bezior.jpg"
+            ]
+        }
+    ]
+
+    featuredBrands.map(function (el, index, arr){
+
+        var makeDiv = document.createElement("div");
+        makeDiv.setAttribute("id","fBDivBox");
+        console.log(el.img[0]);
+        var imgVar = el.img[0];
+        
+        makeDiv.style.backgroundImage = "url(" + imgVar + ")";
+
+        var makeDivID = document.getElementById("fBDivBox");
+
+        document.querySelector("#featuredBrands").append(makeDiv);
+    });
+
+    var allBrands = [
+        {
+            icon: "https://img.gkbcdn.com/s3/cim/category-1241.png",
+            title: "Sports & Outdoors",
+            img: [
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/oukitel.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/orico.jpg",
+                "https://img.gkbcdn.com/s3/b/kugookirin-6TQnAkvC.jpg",
+                "https://img.gkbcdn.com/s3/b/2003/mijia.jpg?v=501322930",
+                "https://img.gkbcdn.com/s3/b/Logo/yunmai.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/fimi.jpg?v=594574638",
+                "https://img.gkbcdn.com/s3/b/Logo/fimi.jpg?v=594574638",
+            ]
+        },
+        {
+            icon: "https://img.gkbcdn.com/s3/cim/category-174.png",
+            title: "Smart Home & Garden",
+            img: [
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/acgam.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/sonoff.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/360.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/baseus.jpg",
+                "https://img.gkbcdn.com/s3/b/cleanfly-6TQngvNo.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/funry.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/geekbes.jpg"
+            ]
+        },
+        {
+            icon: "https://img.gkbcdn.com/s3/cim/category-177.jpg",
+            title: "Consumer Electronics",
+            img: [
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/lenovo.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/oneplus.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/huawei.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/elephone.jpg",
+                "https://img.gkbcdn.com/s3/b/acgam.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/makibes.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/apple.jpg",
+            ]
+        },
+        {
+            icon: "https://img.gkbcdn.com/s3/cim/category-178.png",
+            title: "Phones & Accessories",
+            img: [
+                "https://img.gkbcdn.com/s3/b/seneo-67mCVkSJ.jpg",
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/lenovo.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Pocophone.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/oneplus.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/huawei.jpg",
+            ]
+        },
+        {
+            icon: "https://img.gkbcdn.com/s3/cim/category-505.png",
+            title: "TV Boxes & Mini PCs",
+            img: [
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/acgam.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/sonoff.jpg",
+                "https://img.gkbcdn.com/s3/b/acgam.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/makibes.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/apple.jpg",
+            ]
+        },
+        {
+            icon: "https://img.gkbcdn.com/s3/cim/category-1549.png",
+            title: "Wearable Devices",
+            img: [
+                "https://img.gkbcdn.com/s3/b/Logo/lenovo.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/Pocophone.jpg",
+                "https://img.gkbcdn.com/s3/b/Logo/oneplus.jpg",
+                "https://img.gkbcdn.com/s3/b/xiaomi.jpg",
+                "https://img.gkbcdn.com/s3/b/acgam.jpg",
+            ]
+        }
+    ]
+
+    allBrands.map(function (el, index, arr){
+        var upperBox = document.createElement("div");
+
+        var iconTag = document.createElement("img");
+        iconTag.setAttribute("id", "iconTagID")
+        iconTag.src = el.icon;
+
+        var title = document.createElement("span");
+        title.innerText = el.title;
+
+        upperBox.append(iconTag, title);
+
+        var imgDivAB = document.createElement("div");
+        imgDivAB.setAttribute("id", "imgDivAB");
+
+        var mainImgBox = document.createElement("div");
+        mainImgBox.setAttribute("id", "ABimgBoxID");
+
+        for(var i=0; i<el.img.length; i++){
+            var img = el.img[i];
+            var innerImg = document.createElement("img");
+            innerImg.setAttribute("id", "innerImg")
+            innerImg.src = img ;
+            mainImgBox.append(innerImg);
+        }
+
+        document.querySelector("#allBrands").append(upperBox, mainImgBox);
+    });
+</script>
