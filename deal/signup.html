@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="login.css" />
+
+</head>
+<body>
+    <div id="top">
+        <a href="home.html"><img src="https://www.shareasale.com/images/logo2016_1.jpg"> </a>  
+    </div>
+    <div id="bottum">
+    
+        <img src="https://img.gkbcdn.com/s3/bn/2203/signin-6239450f2b40c91b9c8a4526.jpg"/>
+
+      <div id="Signuppage">
+          <div id="divtext">
+              <h3>Create your account</h3>
+              <p><a href="login.html">Sign In</a></p>
+          </div>
+
+          <form id="form">
+            <input id="nickname" class="common" type="text" placeholder="Nick Name" size="30" /><br><br>
+
+            <input id="email" class="common" type="email" placeholder="Email Address" size="40"/><br><br>
+
+            <input id="pass" class="common" type="password" placeholder="Password" size="10" /><br><br>
+
+          <div id="accessbtn">
+            <input id="access" type=""text placeholder="Access code" size="4" /> 
+
+            <button id="btncaptcha" >DYCJ</button>
+            
+          </div><br><br>
+
+            <!-- <button id="captcha" type="text" style="height:40px; width:115px; margin-left:12px; margin-top:5px;"></button> -->
+
+            <div id="checkbox">
+                <input type="checkbox"/>
+                <label id="label">I agree to GeekBuying's <a href="">Terms of Use</a> & <a href="">Privacy Policy</a>.</label>
+            </div><br><br>
+            
+            
+            <input id="btn" type="submit" value="Create account" />
+        </form>
+      </div>
+        
+    </div>
+    <p>Copyright © 2012 - 2022 GeekBuying.com. All rights reserved.</p>
+</body>
+</html>
+
+<script>
+    
+    document.querySelector("#form").addEventListener("submit",signupFun)
+
+    var userData=JSON.parse(localStorage.getItem("geeksign"))||[];
+
+    function signupFun(){
+        event.preventDefault()
+        
+        userObj={
+            nickname:document.querySelector("#nickname").value,
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#pass").value,
+            accesscode:document.querySelector("#access").value,
+        };
+
+        for(var key in userObj){
+            //console.log(key,userObj[key]);
+            if(userObj[key]==""){
+                //console.log("invalid");
+                alert("Invalid Credential, Try Again");
+                break;
+            }
+            else{
+                alert("Registraion Successfull");
+                window.location.href="login.html";
+                break;
+            }
+        }
+       userData.push(userObj);
+       localStorage.setItem("geeksign",JSON.stringify(userData))
+       
+    };
+
+</script>

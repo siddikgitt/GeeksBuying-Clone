@@ -9,25 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- link,script for navbar -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    
-    <link rel="stylesheet" href="index.css">
-    
-
+    <link rel="stylesheet" href="home.css">
     <title>Document</title>
 </head>
 <body>
-    
     <div class="main">
-        <!-- navbar  start -->
         <div class="navbarr">
             <nav class="navbar navbar-expand-sm">
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -120,8 +113,8 @@
                             <li>
                                 <div>
                                     <p>Welcome to Geekbuying</p><br>
-                                    <a href="./login.html"> <button id="signin">Sign in</button><br></a>
-                                    <a href="./signup.html"><button id="createaccount">create a new account</button> </a>
+                                    <button id="signin"><a href="signup.html">Sign in</a></button><br>
+                                    <button id="createaccount">create a new account</button>
                                     <p>or</p>
                                     <div>
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/36px-Google_%22G%22_Logo.svg.png?20210618182606" alt="google icon">
@@ -134,13 +127,14 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="wishlist">
                         <p>Wishlist</p>
                     </div>
-                    <a href="./deal/cart.html"><div id="cart" style="display: flex; margin-right: 10px;">
-                        <img src="https://img.icons8.com/pastel-glyph/344/shopping-trolley--v2.png" alt="cart">
+                    <div id="cart">
+                        <a href="cart.html"><img src="https://i.pinimg.com/236x/2d/96/4a/2d964a6bf37d9224d0615dc85fccdd62--shopping-cart-logo-info-graphics.jpg" alt="Cart"></a>
                         <div>
                              <div id="cartcount"></div>
                             <p>Cart</p>
-                        </div>  
-                    </div></a>
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
             <div class="three">
@@ -570,20 +564,16 @@
                         </ul>
                     </div>
                 </div>
-                <div id="new"> <a href="./loginfolder/new.html">New</a></div>
-                <div id="topseller"><a href="#">Top Seller</a></div>
-                <div id="live"><a href="./live/livepart.html">Live</a></div>
-                <div id="brand"><a href="./brand/brand.html">Brand</a></div>
-                <div id="clearance"><a href="#">Clearance</a></div>
-                <div id="deals"><a href="./deal/deal.html">Deals</a></div>
-                <div id="bargain"><a href="#">Bargain</a></div>
-                <div id="coupon"><a href="#">Coupon</a></div>
+                <div id="new" style="font-weight: b;"> <a href="#">New</a></div>
+                <div id="topseller">Top Seller</div>
+                <div id="live">Live</div>
+                <div id="brand">Brand</div>
+                <div id="clearance">Clearance</div>
+                <div id="deals"><a href="index.html">Deal</a></div>
+                <div id="bargain">Bargain</div>
+                <div id="coupon">Coupon</div>
             </div>
         </div>
-        
-
-
-         <!-- navbar end  -->
         <div class="HOME">
         <div class="homeone">
             <div >
@@ -1572,124 +1562,8 @@
             </div>
         </div>
         </div>
-        <!-- footersection -->
-        <div class="footer">
-            
-        </div>
-            
-    <div id="footer">
-        <div id="super">
-          <div class="bottom">
-            <div>
-                <div id="sub" style="margin-left: -100px;">
-                  <input id="email" type="text" placeholder="Enter email to get a 5% off coupon" maxlength="50">
-                  <input id="SendEmail" class="btnSubscribe" type="button"  value="Subscribe"  onclick  ="alert  ('You are successful subscribe my store thank you'  ) " >
-                </div>
-                
-                <div id="para" style="margin-left: -50px;">
-                    <h3>About Geekbuying</h3>
-                <p>
-                    We at Geekbuying are all about making our customers' lives comfortable and smarter. We have 
-                    a massive selection of products and offer unbeatable prices.
-                    If you are looking for the latest and the greatest product in categories like smart home
-                    and outdoor gadgets, Geekbuying is where you should be! <br>
-                    Geekbuying is the ultimate shopping hub for new releases covering smart home products like vacuum cleaners, fitness
-                    equipment like treadmills, top of the line home and office furniture, outdoor items including e-bikes, scooters, and other consumer goods like TV boxes, RC Toys and so much more! Shop for your favorite brands and products today!
-                
-                </p>
-                <h3>Popular Searches</h3>
-            </div>
-            
-            </div>
-            <div>
-                <div id="facebook">
-                    <div>
-                        <a href="https://www.facebook.com/profile.php?id=100031941976308"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa2hZx2HT5-mPE1fNRM4H6iKPPnEi_y1TJyg&usqp=CAU"> </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/results?search_query=masai+interview+questions"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ1i-il-8tIfn_xQlHLP8RfGhes7fmGHsyCw&usqp=CAU"></a>
-                    </div>
-                    <div> <a href="https://web.telegram.org/z/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTVcTOZYyrz6hf1wC5AMoO0mQmBTapkYlkg&usqp=CAU" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/?hl=hi"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FLkBp9Lvl4pDF1TAz4e5r7nUC8GH4t6u3g&usqp=CAU" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/ajeetsinghbhabu/lists"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwYRCnVdVluvYMKxUq8TaPiW0C3zuAvTgqZw&usqp=CAU" alt=""></a>
-                    </div>
-                    
-                    <div>
-                        <a href="https://blog.geekbuying.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2K3xmRWP_D8Q6ORSgwAxxnDv3NcYLTsOSg&usqp=CAU" alt=""></a>
-                    </div>
-                    
-                </div>
-                <div id="android">
-                    <div>
-                        <a href="https://m.geekbuying.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkogilRaQ_JOTQXv4MQzImsAsb7keQamxXMA&usqp=CAU" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="https://geekbuying.app.link/pcwebandroid"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM41UDKF9JzhCsASRoE1zyKp1_LwkGEM6RWQ&usqp=CAU" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="https://geekbuying.app.link/pcwebios"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-zQK022878CUJB6kJR2djj1i5-H2Yo6_fw&usqp=CAU" alt=""></a>
-                    </div>
-                </div>
-                <div id="help" style="margin-left: 5px;">
-                    <div>
-                        <h3>Help</h3>
-                        <p>Order status</p>
-                        <p>About us</p>
-                        <p>Contact us</p>
-                        <p>Warranty</p>
-                        <p>FAQs</p>
-                        <p>Sitemap</p>
-                        
-      
-                    </div>
-                    <div style="margin-left: -60px;">
-                        <h3>Support</h3>
-                        <p>Payment information</p>
-                        <p>Shipping guide</p>
-                        <p>Wholesale</p>
-                        <p>Affiliates</p>
-                        <p>Student discount</p>
-                        <p>Youth discount</p>
-                        <p>Request a sample</p>
-                    </div>
-                    <div style="margin-left: -90px;">
-                        <h3>Policies</h3>
-                        <p>Terms & conditions</p>
-                        <p>Return policy</p>
-                        <p>Privacy</p>
-                        <p>Declaration</p>
-                        <p>Customs</p>
-                        <p>Ajeet Singh</p>
-                    </div>
-      
-                </div>
-      
-            </div>
-            
-        
-        </div>
-        <div id="geek"> 
-            <div>Geekbuying Coupon</div>
-            <div>Roborock Q7 Max</div>
-            <div>Tronsmart Bluetooth Speakers</div>
-            <div> Windows Mini PC</div>
-            <div>android tv boxes</div>
-            <div> LDS Robot Vacuum</div>
-            <div> Electric Bike</div>
-            <div>OnexPlayer mini AMD</div>
-      
-        </div>
-        <div id="lang">
-            <h3>English || Español || Français || Deutsch || Italiano || Português || Nederlands || Polski || Русский || Türkçe || ελληνικά || Magyar || لعربية || עברי 日本語</h3>
-            <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg?v=20220322" alt="">
-        </div>
-      </div>
-    </div>
+       
     </div>
 </body>
-<script src="index.js"></script>
+<script src="home.js"></script>
 </html>
