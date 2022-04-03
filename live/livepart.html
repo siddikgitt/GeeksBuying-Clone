@@ -11,10 +11,575 @@
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous">
    </script>
+   <!-- start navbar -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
   
+  <link rel="stylesheet" href="index.css">
+  <!-- endnavbar -->
 </head>
  <body>
    <!-- navbarsection -->
+  <div class="main"> 
+   <div class="navbarr">
+      <nav class="navbar navbar-expand-sm">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                          <span><img src="https://cdn-icons-png.flaticon.com/128/7177/7177341.png" style="height: 15px;"></span>Save BIG with our app!</a>
+                      <div class="dropdown-menu" style="padding: 20px;">
+                          <div class="ourimg1">
+                          <p>Get exclusive app deals and discounts, download our app & SAVE</p>
+                          <div class="ourimg">
+                              <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/android_app.png" alt="urcod"></div>
+                              <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/app_store.jpg" alt="app_store"></div>
+                              <div><img src="https://content1.geekbuying.com/V1.4/en/images/index_images/google_play.jpg" alt="google_play"></div>
+                          </div>
+                          <p>Go mobile site</p>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">language </a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Nepali</a>
+                          <a href="#" class="dropdown-item">Marathi</a>
+                          <a href="#" class="dropdown-item">Maithili</a>
+                          <a href="#" class="dropdown-item">Konkani</a>
+                          <a href="#" class="dropdown-item">Maithili</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ship to <span><img style="height: 15px;" src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"></span>/NRI</a>
+                      <div class="dropdown-menu">
+                          <div class="nri1">
+                              <p>Select Regional Settings</p><br>
+                              <label>Ship to</label><br>
+                              <select id="NRI">
+                                  <option value="india"><samp><img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="india"></samp>India</option>
+                                  <option value=""></option>
+                                  <option value=""></option>
+                                  <option value=""></option>
+                              </select><br>
+                              <label>Currency</label><br>
+                              <select id="Currency">
+                                  <option value="rupee">INR ₹</option>
+                                  <option value=""></option>
+                                  <option value=""></option>
+                                  <option value=""></option>
+                              </select><br>
+                              <button id="save">Save</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">spport center</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item"><span><img src="https://img.icons8.com/carbon-copy/344/chat--v1.png" style="height: 15px; margin-left: 10px;"></span>Inbox</a>
+                          <a href="#" class="dropdown-item"><span><img src="https://cdn4.iconfinder.com/data/icons/office-vol-3-3/140/send__paper_plane__rocket__mail-256.png" style="height: 15px; margin-left: 10px;"></span>Sent</a>
+                          <a href="#" class="dropdown-item"><span><img src="https://img.icons8.com/ios/344/help.png" style="height: 15px; margin-left: 10px;"></span>Drafts</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      <div class="two">
+          <img src="https://www.shareasale.com/images/logo2016_1.jpg" alt="logo">
+          <div class="two1">
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">allcategories </a>
+                  <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Smart Home & Garden</a>
+                      <a href="#" class="dropdown-item">Phones & Accessories</a>
+                      <a href="#" class="dropdown-item">Computers, Tablets & Accessories</a>
+                      <a href="#" class="dropdown-item">Wearable Devices</a>
+                      <a href="#" class="dropdown-item">Maithili</a>
+                      <a href="#" class="dropdown-item">Drafts</a>
+                  </div>
+              </div>
+              <label style="font-size: large;">|</label>
+              <input type="text" id="searchinput" value="" placeholder="search by keywordo">
+              <button id="search">
+                  <img src="https://cdn.vectorstock.com/i/1000x1000/18/12/search-icon-white-on-the-blue-background-vector-3451812.webp" alt="search">
+              </button>   
+          </div>
+          <div class="two2">
+              <div class="signin1">
+                  <img src="https://cdn-icons-png.flaticon.com/128/747/747376.png" alt="sign in">
+                  <p>Sign in</p>
+                  <ul class="signin">
+                      <li>
+                          <div>
+                              <p>Welcome to Geekbuying</p><br>
+                              <a href="./loginfolder/login.html"> <button id="signin">Sign in</button><br></a>
+                              <a href="./loginfolder/signup.html"><button id="createaccount">create a new account</button> </a>
+                              <p>or</p>
+                              <div>
+                                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/36px-Google_%22G%22_Logo.svg.png?20210618182606" alt="google icon">
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div id="wishlist">
+                  <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="wishlist">
+                  <p>Wishlist</p>
+              </div>
+              <a href="./deal/cart.html"><div id="cart" style="display: flex; margin-right: 10px;">
+                  <img src="https://cdn-icons.flaticon.com/png/128/649/premium/649931.png?token=exp=1648490987~hmac=ac3b9cc2fcde0ff28cd07de528cfa81e" alt="cart">
+                  <div>
+                       <div id="cartcount"></div>
+                      <p>Cart</p>
+                  </div>  
+              </div></a>
+          </div>
+      </div>
+      <div class="three">
+          <div class="three1">
+              <div class="three2">
+                  <div>shop all categories</div>
+                  <ul class="down0">
+                      <li> <a href="#"><div class="Localwarehouses"><div>Local Warehouses</div>
+                          <ul class="down1"> 
+                               <a href="#">EU Warehouses</a>
+                               <a href="#">DE Warehouses</a>
+                               <a href="#">PL Warehouses</a>
+                               <a href="#">ES Warehouses</a>
+                               <a href="#">IT Warehouses</a>
+                               <a href="#">cz Warehouses</a>
+                               <a href="#">uk Warehouses</a>
+                               <a href="#">EU-3 Warehouses</a>
+                               <a href="#">Us Warehouses</a>
+                          </ul>
+                          
+                      </div></a></li>
+                      <li> <a href="#"><div class="Smarthomegarden"><div>Smart Home & Garden</div>
+                          <ul class="down2">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; transform: translateX(-320px);">
+                                          <div>
+                                              <a href="#" style="font-size: large;">Smarthome</a><br>
+                                              <a href="#">Robot Vacuum Cleaners</a><br>
+                                              <a href="#">Cordless Vacuum Cleaners</a><br>
+                                              <a href="#">Fitness</a><br>
+                                              <a href="#">Smart Sockets & Switches</a><br>
+                                              <a href="#">Smart Lights</a><br>
+                                              <a href="#">Xiaomi Smart Gadgets</a><br>
+                                              <a href="#">Air Purifier</a><br>
+                                              <a href="#">Others</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Kitchen & Dining</a><br>
+                                              <a href="#">Kitchen Appliances</a><br>
+                                              <a href="#">Cookware</a><br>
+                                              <a href="#">Bakeware</a><br>
+                                              <a href="#">Tableware</a><br>
+                                              <a href="#">Smart Lights</a><br>
+                                              <a href="#">Barware</a><br>
+                                              <a href="#">Kitchen Tools & Gadgets</a><br>
+                                              <a href="#">Others</a>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; transform: translateX(-320px);">
+                                          <div>
+                                              <a href="#" style="font-size: large">Furniture</a><br>
+                                              <a href="#">Outdoor Furniture</a><br>
+                                              <a href="#">Tables</a><br>
+                                              <a href="#">Chairs</a><br>
+                                              <a href="#">Beds & Accessories</a><br>
+                                              <a href="#">Cabinets & Storage</a><br>
+                                              <a href="#">ShelvingShelving</a><br>
+                                              <a href="#">Entertainment Centres & TV Stands</a><br>
+                                              <a href="#">Furniture Sets</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Patio, Lawn & Garden</a><br>
+                                              <a href="#">Pots & Planters</a><br>
+                                              <a href="#">Watering & Irrigation</a><br>
+                                              <a href="#">Mowers & Outdoor Power Tools</a><br>
+                                              <a href="#">Other Garden Sups</a><br>
+                                              <a href="#">Beds & Accessories</a><br>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; transform: translateX(-320px);">
+                                          <div>
+                                              <a href="#" style="font-size: large">Health & Beauty</a><br>
+                                              <a href="#">Personal Care</a><br>
+                                              <a href="#">Health Care</a><br>
+                                              <a href="#">Massage & Relaxation</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Home Decors</a><br>
+                                              <a href="#">Rugs</a><br>
+                                              <a href="#">Door Mats</a><br>
+                                              <a href="#">Window Treatments</a><br>
+                                              <a href="#">Mirrors</a><br>
+                                              <a href="#">Artificial Flora</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Lighting</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Tools & Home Improvement</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Office Supplies</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Pet Supplies</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Bathroom Supplies</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="Sportsoutdoors"><div>Sports & Outdoors</div>
+                          <ul class="down3">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">E-Bikes, Scooters & Wheels</a><br>
+                                              <a href="#">Bikes</a><br>
+                                              <a href="#">Electric Scooters</a><br>
+                                              <a href="#">Electric Skateboards</a><br>
+                                              <a href="#">Accessories</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Exercise</a><br>
+                                              <a href="#">Fitness & Body Building</a><br>
+                                              <a href="#">Water Sports</a><br>
+                                              <a href="#">Yoga & Pilates</a><br>
+                                              <a href="#">Weightlifting</a><br>
+                                              <a href="#">Cardio</a><br>
+                                              <a href="#">Indoor Games</a>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large">Camping & Hiking</a><br>
+                                              <a href="#">Luggage & Bags</a><br>
+                                              <a href="#">Tent & Hammock</a><br>
+                                              <a href="#">Travel Supplies</a><br>
+                                              <a href="#">Knives & Multi Tools</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Cycling</a><br>
+                                              <a href="#">Bike Computers</a><br>
+                                              <a href="#">Bike Bags</a><br>
+                                              <a href="#">Bike Tools</a><br>
+                                              <a href="#">Cycling Apparels</a><br>
+                                              <a href="#">Other Accessories</a>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Generators</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Flashlight & Torch</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Sports Cameras</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Hunting & Shooting</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Recreation</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Outdoor Apparels</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Athletics</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>	
+                      <li> <a href="#"><div class="Consumerelectronics"><div>Consumer Electronics</div>
+                          <ul class="down4">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">3D Printers & Accessories</a><br>
+                                              <a href="#">FDM 3D Printers</a><br>
+                                              <a href="#">SLA 3D Printers</a><br>
+                                              <a href="#">Electric Skateboards</a><br>
+                                              <a href="#">3D Printer Accessories</a>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Laser Engravers & Cutters</a><br>
+                                              <a href="#">Desktop Laser Engravers</a><br>
+                                              <a href="#">Portable Laser Engravers</a><br>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large">Bluetooth Speakers</a><br>
+                                              <a href="#">Wireless & Bluetooth Speakers</a><br>
+                                              <a href="#">Outdoor Speakers</a><br>
+                                              <a href="#">Accessories</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Headphones & Earphones</a><br>
+                                              <a href="#">Earbud Headphones</a><br>
+                                              <a href="#">On-ear & Over-ear Headphones</a><br>
+                                              <a href="#">Sports & Fitness Headphones</a><br>
+                                              <a href="#">Headphone Accessories</a><br>
+                                          </div>
+                                          
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large">Professional Instruments & Tools</a><br>
+                                              <a href="#">Measurement & Analysis Instruments</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Memory Card</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Cameras & Optics</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Power Banks & Chargers</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Audio & Video Accessories</a><br>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="TVBoxesMiniPCs"><div>TV Boxes & Mini PCs</div>
+                          <ul class="down5">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Windows Mini PCs</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Android TV Sticks</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Barebone Mini PC</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">MINI PC Accessories & Gadgets</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Barebone Mini PC</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Bundle & Discount Zone</a><br>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="ComputersTabletsAccessories"><div>Computers, Tablets & Accessories</div>
+                          <ul class="down6">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">Laptops</a><br>
+                                              <a href="#">Ultrabooks</a><br>
+                                              <a href="#">Gaming Laptops</a><br>
+                                              <a href="#">Laptop Accessories</a><br>
+                                              
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Tablets</a><br>
+                                              <a href="#">Android Tablets</a><br>
+                                              <a href="#">Laptop Accessories</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large;">Computer Components</a><br>
+                                              <a href="#">DIY PC</a><br>
+                                              <a href="#">SSD & HDD & Enclosures</a><br>
+                                              <a href="#">PC Power Supplies</a><br>
+                                              <a href="#">Fan & Cooling</a><br>
+                                              <a href="#">Monitors</a><br>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Graphic Tablets</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">USB Gadgets</a><br>
+                                              <a href="#"style="font-size: large; margin-bottom: 10px;">Power Banks & Chargers</a><br>
+                                              <a href="#" style="font-size: large">USB Gadgets</a><br>
+                                              <a href="#">Earbud Headphones</a><br>
+                                              <a href="#">On-ear & Over-ear Headphones</a><br>
+                                              <a href="#">Sports & Fitness Headphones</a><br>
+                                              <a href="#">Headphone Accessories</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Tronsmart Chargers</a><br>
+                                              <a href="#">Tronsmart Wall Chargers</a><br>
+                                              <a href="#">Tronsmart Cables</a><br>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="ToysHobbies"><div>Toys & Hobbies</div>
+                          <ul class="down7">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">RC Drones</a><br>
+                                              <a href="#">RC Quadcopters</a><br>
+                                              <a href="#">FPV Racing Drone</a><br>
+                                              <a href="#">RC Airplanes</a><br>
+                                              <a href="#">RC Helicopters</a><br>
+                                              
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">FPV System</a><br>
+                                              <a href="#" style="font-size: large">RC Parts</a><br>
+                                              <a href="#">RC Boat Parts</a><br>
+                                              <a href="#">RC Car Parts</a><br>
+                                              <a href="#">RC Quadcopter Parts</a><br>
+                                              <a href="#">Multi Rotor Parts</a><br>
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large">RC Vehicles</a><br>
+                                              <a href="#">RC Cars</a><br>
+                                              <a href="#">RC Boats</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Musical Instruments & Hobbies</a><br>
+                                              <a href="#">Brass</a><br>
+                                              <a href="#">Strings</a><br>
+                                              <a href="#">Drums & Percussion</a><br>
+                                              <a href="#">Other Musical Instruments</a><br>
+                                              <a href="#">Other Hobbies</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Toys</a><br>
+                                              <a href="#">Fidget Toys</a><br>
+                                              <a href="#">Dolls, Playsets & Toy Figures</a><br>
+                                              <a href="#">Puzzle Toys</a><br>
+                                              <a href="#">Holidays & Party</a><br>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="PhonesAccessories"><div>Phones & Accessories</div>
+                          <ul class="down8">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">Cell Phones</a><br>
+                                              <a href="#">5G Smartphones</a><br>
+                                              <a href="#">4G Smartphones</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large;">Phone Accessories</a><br>
+                                              <a href="#">Screen Protectors</a><br>
+                                              <a href="#">Cases & Covers</a><br>
+                                              <a href="#" style="font-size: large">Apple Accessories</a><br>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="AutomobilesMotorcycles"><div>Automobiles & Motorcycles</div>
+                          <ul class="down9">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car DVRs</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car Alarm & Security</a><br>
+                                              <a href="#" style="font-size: large;">Car Lights</a><br>
+                                              <a href="#">Car LED Bulbs</a><br>
+                                              <a href="#">HID Xenon Lights</a><br>
+                                              <br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car Audio & Video</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car Chargers</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car Decorations</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car Repair & Maintenance</a><br>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Car Parts & Gadgets</a><br>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="SecuritySystems"><div>Security Systems</div>
+                          <ul class="down11">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">Security Cameras</a><br>
+                                              <a href="#">NVR Kits</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large;">Surveillance DVR Systems</a><br>
+                                              <a href="#">IP Cameras</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large;">Access Control Systems</a><br>
+                                              <a href="#">Access Controller & Key</a><br>
+                                              <a href="#">Video Door Phones</a><br>
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Security System Accessories</a><br>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                      <li> <a href="#"><div class="Fashion"><div>Fashion</div>
+                          <ul class="down12">
+                              <li> 
+                                  <div style="display: flex;" class="iner">
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large;">Fashion</a><br>
+                                              <a href="#">Pocket Watches</a><br>
+                                              <a href="#">Women's Watches</a><br>
+                                              <a href="#">LED Watches</a><br>
+                                              
+                                              
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large; margin-bottom: 10px;">Jewelry</a><br>
+                                              <a href="#" style="font-size: large">Rings</a><br>
+                                              <a href="#">Earrings</a><br>
+                                              <a href="#">Necklaces & Pendants</a><br>
+                                              <a href="#">Others</a><br>
+                                              
+                                          </div>
+                                      </div>
+                                      <div style="height: 400px; width: 200px; ">
+                                          <div>
+                                              <a href="#" style="font-size: large">Clothing</a><br>
+                                              <a href="#">Uniforms</a><br>
+                                              <a href="#">Suits</a><br>
+                                              <a href="#">Shirts & Tops</a><br>
+                                              <a href="#">Others</a><br>
+  
+                                          </div>
+                                          <div>
+                                              <a href="#" style="font-size: large">Bags & Shoes</a><br>
+                                              <a href="#">Shoes</a><br>
+                                              <a href="#">Handbags, Wallets & Cases</a><br>
+                                              <a href="#">Shoe Care & Accessories</a><br>
+                                          </div>	
+                                      </div>
+                                  </div>
+                              </li> 
+                          </ul>
+                      </div></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div id="new"> <a href="./loginfolder/new.html">New</a></div>
+          <div id="topseller"><a href="#">Top Seller</a></div>
+          <div id="live"><a href="./live/livepart.html">Live</a></div>
+          <div id="brand"><a href="./brand/brand.html">Brand</a></div>
+          <div id="clearance"><a href="#">Clearance</a></div>
+          <div id="deals"><a href="./deal/deal.html">Deals</a></div>
+          <div id="bargain"><a href="#">Bargain</a></div>
+          <div id="coupon"><a href="#">Coupon</a></div>
+      </div>
+  </div>
+ </div>   
+<!---------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------- */ -->
+  <!--  navbar end  -->
+   <!-- navbar end -->
+ <div id="main" > 
     <div id="container">
          <div id ="first">
             <div class="up">
@@ -27,7 +592,7 @@
                   <table>
                     <tr>
                         <td><p class="language">Language:</p></td>
-                        <td><select id="select">
+                        <td><select id="selectAll">
                             <option value="All">All</option>
                             <option value="Italian">Italian</option>
                             <option value="Hungarian">Hungarian</option>
@@ -44,10 +609,10 @@
                   <table>
                     <tr>
                         <td><p id="livestatus">Live Status:</p></td>
-                        <td><button>All</button></td>
-                        <td><button>Live</button></td>
-                        <td><button>Preview</button></td>
-                        <td><button>Replay</button></td>
+                        <td><button class="btnbutton">All</button></td>
+                        <td><button  class="btnbutton">Live</button></td>
+                        <td><button  class="btnbutton">Preview</button></td>
+                        <td><button  class="btnbutton">Replay</button></td>
                     </tr>
                   </table>  
                 </div>
@@ -478,6 +1043,9 @@
         <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/footicons.jpg?v=20220322" alt="">
     </div>
   </div>
-</div>
+
+    </div>
+ </div> 
+  
   </body>
 </html>
