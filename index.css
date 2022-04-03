@@ -1,5 +1,6 @@
 body{
     background-image: ("https://promotion.geekbuying.com/promotion/march_mega_sale");
+    background-color: #000;
 }
 .main{
     width: 70%;
@@ -22,18 +23,89 @@ a{
     height: 125px;
     width: 100%;
     padding-left: 40px;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+.nav-link{
+	font-size: larger;
+	color: black;
+	margin-right: 20px;
+}
+.navbar{
+	padding-left: 500px;
+	width: 100%;
+	height: 20px;
+}
+.dropdown-menu{
+	font-size: larger;
+	color: black;
+}
+.ourimg1{
+    height: 200px;
+    width: 250px;
+    padding-right: 25px;
+}
+.ourimg img{
+    width: 100%;
+}
+.ourimg{
+    height: 100px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "a b b"
+    "a c c"
+}
+.ourimg>div:nth-child(1){
+    grid-area: a;
+    height: 100px;
+    width: 100px;
+}
+.ourimg>div:nth-child(2){
+    grid-area: b;
+}
+.ourimg>div:nth-child(3){
+    grid-area: c;
+}
+.nri1{
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+}
+.nri1>select{
+    border: 1px solid;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.nri1>button{
+    margin-left: 200px;
+    background-color: orange;
+    height: 20px;
+    width: 50px;
 }
 
 .two{
-    height: 60px;
+    height: 40px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .two>img{
-    height: 60px;
+    height: 80px;
     cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 30px;
 }
 .two1{
     height: 30px;
@@ -41,6 +113,9 @@ a{
     border: 1px solid blue;
     border-radius: 5px;
     display: flex;
+}
+.two1>input{
+    width: 400px;
 }
 .two1>input{
     width: 400px;
@@ -59,7 +134,7 @@ a{
     background-color: #3199ce;
     cursor: pointer;
 }
-.two1>button>img{
+#search>img{
     height: 25px;
 }
 .two2{
@@ -100,7 +175,7 @@ a{
     justify-content: space-around;
     align-items: right;
     background-color: white;
-    transform: translateY(300px);
+    transform: translateY(230px);
 }
 .signin>li>div>button{
     height: 30px;
@@ -111,8 +186,6 @@ a{
 .signin>li>div{
     text-align: center;
 }
-
-
 #cartcount{
     height: 20px;
     width: 20px;
@@ -123,6 +196,9 @@ a{
 .three{
     display: flex;
     font-weight: bold;
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 14px;
 }
 .three>div,select{
     margin-right: 30px;
@@ -140,13 +216,14 @@ a{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .three2:hover .down{
-    transform: translateY(-10px);
+    
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(143, 36, 36);
+    background-color: white;
+    z-index: 1;
 }
 .down1{
     display: none;
@@ -154,7 +231,7 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
+    margin-left: 222px;
     transform: translatey(-27px);
 }
 .Localwarehouses:hover .down1{
@@ -164,7 +241,8 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
+	width: 600px;
 }
 .down2{
     height: 300px;
@@ -174,18 +252,20 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
+    margin-left: 220px;
     transform: translatey(-60px);
+	padding: 0;
     
 }
 .Smarthomegarden:hover .down2{
+	width: 800px;
     display: block;
     display: flex;
     text-align: left;
     padding-left: 500px;
     justify-content: space-around;
     align-items: right; 
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down3{
     display: none;
@@ -193,16 +273,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-93px);
+    margin-left: 220px;
+    transform: translatey(-100px);
 }
 .Sportsoutdoors:hover .down3{
+	width: 800px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down4{
     display: none;
@@ -210,16 +291,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-125px);
+    margin-left: 225px;
+    transform: translatey(-135px);
 }
 .Consumerelectronics:hover .down4{
+	width: 800px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down5{
     display: none;
@@ -227,16 +309,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-158px);
+    margin-left: 220px;
+    transform: translatey(-173px);
 }
 .TVBoxesMiniPCs:hover .down5{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down6{
     display: none;
@@ -244,16 +327,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-193px);
+    margin-left: 220px;
+    transform: translatey(-208px);
 }
 .ComputersTabletsAccessories:hover .down6{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down7{
     display: none;
@@ -261,16 +345,17 @@ a{
     min-width: 350px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-225px);
+    margin-left: 220px;
+    transform: translatey(-245px);
 }
 .ToysHobbies:hover .down7{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down8{
     display: none;
@@ -278,16 +363,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-258px);
+    margin-left: 220px;
+    transform: translatey(-283px);
 }
 .PhonesAccessories:hover .down8{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down9{
     display: none;
@@ -295,16 +381,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-291px);
+    margin-left: 220px;
+    transform: translatey(-320px);
 }
 .AutomobilesMotorcycles:hover .down9{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down10{
     display: none;
@@ -321,7 +408,7 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down11{
     display: none;
@@ -329,16 +416,17 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-360px);
+    margin-left: 220px;
+    transform: translatey(-357px);
 }
 .SecuritySystems:hover .down11{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
 }
 .down12{
     display: none;
@@ -346,22 +434,31 @@ a{
     min-width: 250px;
     min-height: 400px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-left: 250px;
-    transform: translatey(-391px);
+    margin-left: 220px;
+    transform: translatey(-390px);
 }
 .Fashion:hover .down12{
+	width: 600px;
     display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: right;
-    background-color: rgb(12, 231, 12);
+    background-color: white;
+}
+.iner>div{
+	margin-right: 10px;
+	margin-left: 0;
+}
+.iner>div>div{
+	margin-bottom: 10px;
 }
 .homeone{
-    height: 350px;
+    height: 370px;
     width: 100%;
     margin: auto;
     display: flex;
+    padding-top: 20px;
     background-color: white;
 }
 
@@ -438,8 +535,9 @@ a{
 }
 .day,.hur,.min,.sec{
  text-align: center;
- padding-top: 7px;
+ padding-top: 8px;
  font-weight: bolder;
+ font-size: 15px;
 }
 .homethree2{
     height: 320px;
@@ -467,101 +565,7 @@ a{
     width: 23%;
     background-color: white;
 }
-.navbar {
-  overflow: hidden;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-} 
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: rgb(0, 0, 0);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  color: blue;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.ourimg1{
-    height: 200px;
-    width: 250px;
-    padding-right: 25px;
-}
-.ourimg img{
-    width: 100%;
-}
-.ourimg{
-    height: 100px;
-    width: 250px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 10px;
-    grid-template-areas: 
-    "a b b"
-    "a c c"
-}
-.ourimg>div:nth-child(1){
-    grid-area: a;
-    height: 100px;
-    width: 100px;
-}
-.ourimg>div:nth-child(2){
-    grid-area: b;
-}
-.ourimg>div:nth-child(3){
-    grid-area: c;
-}
-.nri1{
-    height: 200px;
-    width: 250px;
-    margin: 15px;
-}
-.nri1>select{
-    border: 1px solid;
-    height: 20px;
-    width: 100%;
-    margin: 10px 0px;
-}
-.nri1>button{
-    margin-left: 200px;
-    background-color: orange;
-    height: 20px;
-    width: 50px;
-}
 .homeeight{
     height: 900px;
     width: 100%;
@@ -610,6 +614,8 @@ a{
     width: 100%;
     background-color: white;
 }
+
+
 h2 {
 	color: #000;
 	font-size: 26px;
@@ -684,20 +690,20 @@ h2::after {
     font-weight: bold;
     margin-left: 5px;
 }
-.carousel .thumb-wrapper {
+.carousel .thumb-wrapper1 {
 	text-align: center;
 }
-.carousel .thumb-content {
+.carousel .thumb-content1 {
 	padding: 15px;
 }
-.carousel .carousel-control {
+.carousel .carousel-control ,.carousel1 .carousel-control{
 	height: 100px;
     width: 40px;
     background: none;
     margin: auto 0;
     background: rgba(0, 0, 0, 0.2);
 }
-.carousel .carousel-control i {
+.carousel .carousel-control i ,.carousel1 .carousel-control i {
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -722,13 +728,13 @@ h2::after {
 	color: #86bd57;
 	font-size: 110%;
 }
-.carousel .carousel-control.left i {
+.carousel .carousel-control.left i , .carousel1 .carousel-control.left i{
 	margin-left: -3px;
 }
-.carousel .carousel-control.left i {
+.carousel .carousel-control.left i ,.carousel1 .carousel-control.left i{
 	margin-right: -3px;
 }
-.carousel .carousel-indicators {
+.carousel .carousel-indicators ,.carousel1 .carousel-indicators  {
 	bottom: -50px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
@@ -754,6 +760,85 @@ h2::after {
 .col-sm-3:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 400px;
+}
+
+
+.homesix{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.homeseven{
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+
+.carousel1 {
+	margin: 30px auto 60px;
+	padding: 0 80px;
+}
+
+.carousel1 .item {
+    text-align: center;
+	overflow: hidden;
+}
+.carousel1 .item h4 {
+	font-family: 'Varela Round', sans-serif;
+}
+.carousel1 .item img {
+	max-width: 100%;
+	display: inline-block;
+}
+.carousel1 .item .btn {
+	border-radius: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background: #a177ff;
+	padding: 6px 15px;
+	margin-top: 5px;
+}
+.carousel1 .item .btn:hover {
+	background: #8c5bff;
+}
+.carousel1 .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel1 .thumb-wrapper {
+	margin: 5px;
+	text-align: left;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);   
+}
+.carousel1 .thumb-content {
+	padding: 15px;
+	font-size: 13px;
+}
+
+.homenine{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.hometen{
+    height: 200px;
+    width: 100%;
+    background-color: white;
 }
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
